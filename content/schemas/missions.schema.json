@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "missions.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "nameOriginal", "agency", "type", "launch", "status", "statusCheckedAt", "verifiedBy", "worldIds", "instruments", "discoveries", "mediaIds", "links"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "$ref": "common.schema.json#/$defs/id" },
+      "name": { "$ref": "common.schema.json#/$defs/text" },
+      "nameOriginal": { "$ref": "common.schema.json#/$defs/text" },
+      "agency": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/text" } },
+      "parentMissionId": { "$ref": "common.schema.json#/$defs/id" },
+      "type": { "enum": ["flyby", "orbiter", "lander", "rover", "probe", "telescope", "crewed"] },
+      "launch": { "type": ["string", "null"], "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$", "description": "Launch date (YYYY, YYYY-MM or YYYY-MM-DD); null for ground telescopes." },
+      "arrival": { "type": ["string", "null"], "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$" },
+      "end": { "type": ["string", "null"], "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$" },
+      "status": { "enum": ["planned", "en_route", "active", "completed"] },
+      "statusCheckedAt": { "$ref": "common.schema.json#/$defs/date" },
+      "verifiedBy": { "$ref": "common.schema.json#/$defs/verifiedBy" },
+      "summary": { "type": "string", "maxLength": 600 },
+      "worldIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
+      "instruments": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "what"],
+          "additionalProperties": false,
+          "properties": { "name": { "$ref": "common.schema.json#/$defs/text" }, "what": { "$ref": "common.schema.json#/$defs/text" } }
+        }
+      },
+      "discoveries": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/text" } },
+      "mediaIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
+      "links": { "type": "array", "minItems": 1, "items": { "$ref": "common.schema.json#/$defs/link" } }
+    }
+  }
+}

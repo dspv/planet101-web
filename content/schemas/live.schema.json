@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "live.schema.json",
+  "description": "Written only by tools/fetch_live.py. Every value carries its own fetchedAt, so a value kept from a failed run keeps its old date (ADR-026).",
+  "type": "object",
+  "required": ["generatedAt", "exoplanetCount", "distances", "trappist1e"],
+  "additionalProperties": false,
+  "properties": {
+    "generatedAt": { "$ref": "common.schema.json#/$defs/datetime" },
+    "exoplanetCount": {
+      "type": ["object", "null"],
+      "required": ["value", "fetchedAt"],
+      "additionalProperties": false,
+      "properties": { "value": { "type": "integer", "minimum": 0 }, "fetchedAt": { "$ref": "common.schema.json#/$defs/datetime" } }
+    },
+    "distances": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["au", "lightSeconds", "fetchedAt"],
+        "additionalProperties": false,
+        "properties": {
+          "au": { "type": "number", "exclusiveMinimum": 0 },
+          "lightSeconds": { "type": "number", "exclusiveMinimum": 0 },
+          "fetchedAt": { "$ref": "common.schema.json#/$defs/datetime" }
+        }
+      }
+    },
+    "trappist1e": {
+      "type": ["object", "null"],
+      "required": ["radiusEarth", "massEarth", "eqTempK", "periodDays", "fetchedAt"],
+      "additionalProperties": false,
+      "properties": {
+        "radiusEarth": { "type": ["number", "null"] },
+        "massEarth": { "type": ["number", "null"] },
+        "eqTempK": { "type": ["number", "null"] },
+        "periodDays": { "type": ["number", "null"] },
+        "fetchedAt": { "$ref": "common.schema.json#/$defs/datetime" }
+      }
+    }
+  }
+}

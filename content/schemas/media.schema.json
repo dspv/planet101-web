@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "media.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "kind", "missionId", "worldIds", "title", "credit", "license", "sourceUrl", "originalUrl", "file"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "$ref": "common.schema.json#/$defs/id" },
+      "kind": { "enum": ["photo", "illustration"], "description": "photo = real image from a spacecraft or telescope; illustration = render or artist's concept." },
+      "missionId": { "type": ["string", "null"] },
+      "worldIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
+      "title": { "$ref": "common.schema.json#/$defs/text", "description": "Russian caption." },
+      "credit": { "$ref": "common.schema.json#/$defs/text", "description": "e.g. 'NASA/JPL-Caltech'." },
+      "license": { "enum": ["public_domain", "cc_by_sa_3_igo", "cc_by_4", "cc_by_sa_4", "other"] },
+      "licenseNote": { "type": "string" },
+      "sourceUrl": { "$ref": "common.schema.json#/$defs/url", "description": "Human-readable page of the image at the agency." },
+      "originalUrl": { "$ref": "common.schema.json#/$defs/url", "description": "Original file the pipeline downloads once." },
+      "file": { "type": "string", "pattern": "^[a-z0-9_]+\\.jpg$", "description": "Resized copy served from our hosting under media/." }
+    }
+  }
+}

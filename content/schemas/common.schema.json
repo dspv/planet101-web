@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "datetime": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$" },
+    "hex": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "url": { "type": "string", "pattern": "^https://" },
+    "text": { "type": "string", "minLength": 1 },
+    "verifiedBy": {
+      "description": "Who last checked this record against its primary source. 'agent' = checked by an AI agent against the fetched source page; still needs a human pass (warning in validate.py).",
+      "enum": ["human", "agent"]
+    },
+    "link": {
+      "type": "object",
+      "required": ["title", "url"],
+      "additionalProperties": false,
+      "properties": { "title": { "$ref": "#/$defs/text" }, "url": { "$ref": "#/$defs/url" } }
+    }
+  }
+}

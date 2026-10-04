@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-10-04T11:16:05Z",
+  "exoplanetCount": {
+    "value": 6375,
+    "fetchedAt": "2026-10-04T11:16:06Z"
+  },
+  "distances": {
+    "europa": {
+      "au": 5.88019744,
+      "lightSeconds": 2934.248,
+      "fetchedAt": "2026-10-04T11:16:17Z"
+    },
+    "jupiter": {
+      "au": 5.87957298,
+      "lightSeconds": 2933.936,
+      "fetchedAt": "2026-10-04T11:16:16Z"
+    },
+    "mars": {
+      "au": 1.6414085,
+      "lightSeconds": 819.071,
+      "fetchedAt": "2026-10-04T11:16:14Z"
+    },
+    "mercury": {
+      "au": 1.12851203,
+      "lightSeconds": 563.133,
+      "fetchedAt": "2026-10-04T11:16:09Z"
+    },
+    "moon": {
+      "au": 0.00248085,
+      "lightSeconds": 1.238,
+      "fetchedAt": "2026-10-04T11:16:13Z"
+    },
+    "pluto": {
+      "au": 35.22926933,
+      "lightSeconds": 17579.582,
+      "fetchedAt": "2026-10-04T11:16:20Z"
+    },
+    "titan": {
+      "au": 8.43379318,
+      "lightSeconds": 4208.505,
+      "fetchedAt": "2026-10-04T11:16:19Z"
+    },
+    "venus": {
+      "au": 0.32933275,
+      "lightSeconds": 164.339,
+      "fetchedAt": "2026-10-04T11:16:11Z"
+    }
+  },
+  "trappist1e": {
+    "radiusEarth": 0.92,
+    "massEarth": 0.692,
+    "eqTempK": 249.7,
+    "periodDays": 6.101013,
+    "fetchedAt": "2026-10-04T11:16:07Z"
+  }
+}

@@ -1,0 +1,18 @@
+# Site (Next.js)
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.env*
+!.env.example
+
+# Local wrangler state
+.wrangler/
+
+# Content pipeline (tools/)
+public/content/
+content/media_candidates.json
+__pycache__/
+*.pyc

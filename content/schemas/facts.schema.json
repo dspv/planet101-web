@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "facts.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "worldId", "label", "display", "value", "unit", "uncertainty", "confidence", "howWeKnow", "source", "lastVerified", "verifiedBy"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9_]+\\.[a-z0-9_]+$" },
+      "worldId": { "$ref": "common.schema.json#/$defs/id" },
+      "label": { "$ref": "common.schema.json#/$defs/text" },
+      "display": { "$ref": "common.schema.json#/$defs/text", "description": "Exactly what the UI shows, Russian, with units." },
+      "value": { "type": ["number", "null"], "description": "Numeric value in `unit`; null for non-numeric or unknown facts." },
+      "unit": { "type": ["string", "null"] },
+      "uncertainty": { "type": ["number", "null"] },
+      "confidence": {
+        "enum": ["measured", "derived", "estimated", "model", "unknown"],
+        "description": "'unknown' = science has no answer yet; display says so (ADR-023)."
+      },
+      "howWeKnow": {
+        "type": "object",
+        "required": ["summary", "missionIds", "methodIds", "year"],
+        "additionalProperties": false,
+        "properties": {
+          "summary": { "type": "string", "minLength": 1, "maxLength": 600 },
+          "missionIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
+          "methodIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } },
+          "year": { "type": ["integer", "null"] }
+        }
+      },
+      "source": {
+        "type": "object",
+        "required": ["title", "org", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "$ref": "common.schema.json#/$defs/text" },
+          "org": { "$ref": "common.schema.json#/$defs/text" },
+          "url": { "$ref": "common.schema.json#/$defs/url" }
+        }
+      },
+      "lastVerified": { "$ref": "common.schema.json#/$defs/date" },
+      "verifiedBy": { "$ref": "common.schema.json#/$defs/verifiedBy" }
+    }
+  }
+}

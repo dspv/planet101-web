@@ -1,0 +1,22 @@
+name: docs
+
+on:
+  push:
+    paths: ["**.md", "scripts/align-tables.py", "Makefile", ".github/workflows/docs.yml"]
+  pull_request:
+    paths: ["**.md", "scripts/align-tables.py", "Makefile", ".github/workflows/docs.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tables:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Markdown tables are aligned
+        run: make docs-check

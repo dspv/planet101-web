@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "methods.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "oneLiner", "explainer", "measures", "interactive", "missionIds"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "$ref": "common.schema.json#/$defs/id" },
+      "name": { "$ref": "common.schema.json#/$defs/text" },
+      "oneLiner": { "type": "string", "minLength": 1, "maxLength": 120 },
+      "explainer": { "type": "string", "minLength": 1, "maxLength": 1200 },
+      "measures": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/text" } },
+      "interactive": { "enum": ["transit", "kepler_mass", null] },
+      "missionIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/id" } }
+    }
+  }
+}

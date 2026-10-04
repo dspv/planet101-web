@@ -1,0 +1,8 @@
+# Cloudflare Pages response headers.
+# Points an agent that lands on any page at the plain-text summary.
+# Rules accumulate: a path matched by two blocks gets both, so keep this one block.
+
+/*
+  Link: </llms.txt>; rel="alternate"; type="text/plain"; title="Summary for LLMs"
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

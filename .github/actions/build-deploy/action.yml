@@ -1,0 +1,42 @@
+name: Build and deploy
+description: Validate content, build public/content/v1, build the Next.js site and deploy out/ to Cloudflare Pages.
+inputs:
+  cloudflare-api-token:
+    description: Cloudflare API token with Pages edit permission
+    required: true
+  cloudflare-account-id:
+    description: Cloudflare account id
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+        cache: pip
+        cache-dependency-path: tools/requirements.txt
+    - name: Install pipeline dependencies
+      shell: bash
+      run: pip install -r tools/requirements.txt
+    - name: Validate content
+      shell: bash
+      run: make validate PY=python3
+    - name: Build content
+      shell: bash
+      run: make build PY=python3
+    - uses: actions/setup-node@v4
+      with:
+        node-version: "22"
+        cache: npm
+    - name: Install site dependencies
+      shell: bash
+      run: npm ci
+    - name: Build site
+      shell: bash
+      run: npm run build
+    - name: Deploy to Cloudflare Pages
+      shell: bash
+      env:
+        CLOUDFLARE_API_TOKEN: ${{ inputs.cloudflare-api-token }}
+        CLOUDFLARE_ACCOUNT_ID: ${{ inputs.cloudflare-account-id }}
+      run: npx --yes wrangler pages deploy out --project-name planetwalk --branch master

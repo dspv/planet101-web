@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "worlds.schema.json",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "kind", "temp", "g", "day", "air", "pressure", "desc", "sky", "ground", "amp", "stars", "weather"],
+    "additionalProperties": false,
+    "properties": {
+      "id": { "$ref": "common.schema.json#/$defs/id" },
+      "name": { "$ref": "common.schema.json#/$defs/text" },
+      "kind": { "$ref": "common.schema.json#/$defs/text" },
+      "temp": { "$ref": "common.schema.json#/$defs/text" },
+      "day": { "$ref": "common.schema.json#/$defs/text" },
+      "air": { "$ref": "common.schema.json#/$defs/text" },
+      "pressure": { "$ref": "common.schema.json#/$defs/text" },
+      "desc": { "$ref": "common.schema.json#/$defs/text" },
+      "g": { "type": "number", "exclusiveMinimum": 0 },
+      "sky": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/hex" }, "minItems": 2, "maxItems": 2 },
+      "ground": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/hex" }, "minItems": 3, "maxItems": 3 },
+      "amp": { "type": "array", "items": { "type": "number", "minimum": 0 }, "minItems": 3, "maxItems": 3 },
+      "sun": {
+        "type": "object",
+        "required": ["r", "color", "x", "y"],
+        "additionalProperties": false,
+        "properties": {
+          "r": { "type": "number", "exclusiveMinimum": 0 },
+          "color": { "$ref": "common.schema.json#/$defs/hex" },
+          "x": { "type": "number", "minimum": 0, "maximum": 1 },
+          "y": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      },
+      "stars": { "type": "number", "minimum": 0, "maximum": 1 },
+      "weather": { "enum": ["none", "dust", "rain", "snow", "haze", "clouds"] },
+      "skyBody": { "enum": ["saturn", "jupiter", "earth"] },
+      "gas": { "type": "boolean" },
+      "model": { "type": "boolean" },
+      "video": {
+        "type": "object",
+        "additionalProperties": false,
+        "anyOf": [{ "required": ["file"] }, { "required": ["url"] }],
+        "properties": {
+          "file": { "type": "string", "pattern": "^[a-z0-9_]+\\.mp4$" },
+          "url": { "$ref": "common.schema.json#/$defs/url" },
+          "caption": { "$ref": "common.schema.json#/$defs/text" }
+        }
+      }
+    }
+  }
+}

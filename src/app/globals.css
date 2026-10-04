@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────────
+   PlanetWalk — the reading system. Full rationale: DESIGN.md.
+
+   Two themes tuned like a printed page: paper and graphite. Neither is
+   pure white nor pure black. One accent, a Mars-dust orange. Ratios are
+   WCAG 2 contrast against --bg (and against --card where it differs).
+   ───────────────────────────────────────────────────────────────────── */
+
+/* Graphite (dark). Also the no-JS default when the OS asks for dark. */
+:root {
+  --bg:        #18191b;
+  --bg-soft:   #141517;
+  --card:      #202124;
+  --line:      #34353a;
+  --line-soft: #2a2b2f;
+
+  --ink:       #e9e6df;  /* 14.1:1 on bg, 12.9:1 on card */
+  --ink-mute:  #b8b4ab;  /*  8.5:1 on bg,  7.8:1 on card */
+  --ink-dim:   #918d85;  /*  5.3:1 on bg,  4.9:1 on card */
+  --ink-faint: #5d5b57;  /* decoration only, never text you must read */
+
+  /* The accent: Mars dust. --accent carries text; --btn fills buttons. */
+  --accent:      #f08c50; /* 7.2:1 on bg, 6.6:1 on card */
+  --accent-soft: #f6a777;
+  --btn:         #f08c50;
+  --btn-hover:   #f6a777;
+  --btn-ink:     #1f1d1a; /* 6.9:1 on --btn */
+
+  --font-sans: "Onest Variable", -apple-system, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
+  color-scheme: dark;
+}
+
+/* Paper (light). Same roles. */
+:root[data-theme="light"] {
+  --bg:        #f2efe8;
+  --bg-soft:   #ebe7de;
+  --card:      #f7f5f0;
+  --line:      #d9d3c6;
+  --line-soft: #e4dfd4;
+
+  --ink:       #1f1d1a;  /* 14.6:1 on bg */
+  --ink-mute:  #4a463f;  /*  8.2:1 on bg */
+  --ink-dim:   #635e55;  /*  5.6:1 on bg, 5.2:1 on bg-soft */
+  --ink-faint: #b3ac9e;
+
+  --accent:      #a8471b; /* 5.1:1 on bg, 4.75:1 on bg-soft, 5.4:1 on card */
+  --accent-soft: #8f3b14;
+  --btn:         #e9824a;
+  --btn-hover:   #f0965f;
+  --btn-ink:     #1f1d1a; /* 6.2:1 on --btn */
+  color-scheme: light;
+}
+
+/* No script (or before it runs): follow the OS. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --bg: #f2efe8; --bg-soft: #ebe7de; --card: #f7f5f0; --line: #d9d3c6; --line-soft: #e4dfd4;
+    --ink: #1f1d1a; --ink-mute: #4a463f; --ink-dim: #635e55; --ink-faint: #b3ac9e;
+    --accent: #a8471b; --accent-soft: #8f3b14; --btn: #e9824a; --btn-hover: #f0965f; --btn-ink: #1f1d1a;
+    color-scheme: light;
+  }
+}
+
+@theme inline {
+  --color-bg:          var(--bg);
+  --color-bg-soft:     var(--bg-soft);
+  --color-card:        var(--card);
+  --color-line:        var(--line);
+  --color-line-soft:   var(--line-soft);
+  --color-ink:         var(--ink);
+  --color-ink-mute:    var(--ink-mute);
+  --color-ink-dim:     var(--ink-dim);
+  --color-ink-faint:   var(--ink-faint);
+  --color-accent:      var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-btn:         var(--btn);
+  --color-btn-hover:   var(--btn-hover);
+  --color-btn-ink:     var(--btn-ink);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; max-width: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "liga", "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: clip;
+}
+@media (min-width: 640px) { body { font-size: 1.125rem; } }
+main { overflow-x: clip; }
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--ink);
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+p, li { text-wrap: pretty; }
+
+::selection { background: var(--btn); color: var(--btn-ink); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+@layer components {
+/* Two widths only (DESIGN.md § Layout). */
+.wrap      { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: 1rem; }
+@media (min-width: 640px) { .wrap { padding-inline: 2rem; } }
+.wrap-read { width: 100%; max-width: calc(46rem + 2rem); margin-inline: auto; padding-inline: 1rem; }
+@media (min-width: 640px) { .wrap-read { max-width: calc(46rem + 4rem); padding-inline: 2rem; } }
+.measure   { max-width: 64ch; }
+
+/* Type scale. Cyrillic words run long, so the top steps are a notch
+   smaller than caprock's and headings break on words, not letters. */
+.t-display { font-size: clamp(2.3rem, 5.4vw, 4.25rem); line-height: 1.04; letter-spacing: -0.035em; font-weight: 750; }
+.t-page    { font-size: clamp(2.2rem, 4.6vw, 3.5rem); line-height: 1.06; letter-spacing: -0.03em; font-weight: 740; }
+.t-title   { font-size: clamp(1.85rem, 3.8vw, 3rem); line-height: 1.08; letter-spacing: -0.03em; font-weight: 720; }
+.t-sub     { font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.12; letter-spacing: -0.025em; font-weight: 700; }
+.t-head    { font-size: clamp(1.25rem, 2vw, 1.5rem); line-height: 1.22; letter-spacing: -0.015em; font-weight: 650; }
+.t-lead    { font-size: clamp(1.125rem, 1.8vw, 1.375rem); line-height: 1.55; color: var(--ink-mute); }
+.t-small   { font-size: 0.9375rem; line-height: 1.55; color: var(--ink-dim); }
+.t-stat    { font-size: clamp(2.6rem, 5vw, 4rem); line-height: 1; letter-spacing: -0.04em; font-weight: 720;
+             font-variant-numeric: tabular-nums; }
+
+/* Mono: things an instrument would print — eyebrows, figures, badges. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.wordmark { font-family: var(--font-mono); font-weight: 600; font-size: 1.05rem; letter-spacing: -0.01em; color: var(--ink); }
+.fig      { font-family: var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+
+.band      { padding-block: clamp(3.25rem, 7vw, 5.5rem); }
+.band-soft { background: var(--bg-soft); }
+
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: clamp(1.25rem, 3vw, 2rem); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 22px; font-size: 1rem; font-weight: 600; border-radius: 10px;
+  white-space: nowrap; transition: background 120ms ease, border-color 120ms ease;
+}
+.btn-primary { background: var(--btn); color: var(--btn-ink); border: 1px solid var(--btn); }
+.btn-primary:hover { background: var(--btn-hover); border-color: var(--btn-hover); }
+.btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.btn-ghost:hover { border-color: var(--ink-dim); }
+
+/* A chip links to a mission, a method or a world. */
+.chip {
+  display: inline-flex; align-items: center; gap: 0.4em;
+  padding: 0.3rem 0.75rem; border: 1px solid var(--line); border-radius: 999px;
+  font-size: 0.9375rem; line-height: 1.3; color: var(--ink-mute); background: var(--card);
+}
+a.chip:hover { border-color: var(--accent); color: var(--ink); }
+
+/* Confidence badge: the word is the signal; the glyph only repeats it. */
+.badge {
+  display: inline-flex; align-items: center; gap: 0.45em;
+  padding: 0.2rem 0.6rem; border: 1px solid var(--line); border-radius: 6px;
+  font-family: var(--font-mono); font-size: 0.85rem; font-weight: 500; letter-spacing: 0.02em;
+  color: var(--ink-mute); white-space: nowrap;
+}
+.badge[data-c="measured"] { color: var(--ink); border-color: var(--ink-dim); }
+.badge[data-c="unknown"]  { border-style: dashed; }
+
+/* Prose links: underlined ink, accent underline. */
+.prose-link { color: inherit; text-decoration: underline; text-decoration-color: var(--accent);
+              text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+.prose-link:hover { color: var(--accent); }
+
+/* Range sliders in the method explainers. */
+.range { width: 100%; accent-color: var(--btn); }
+}
