@@ -46,6 +46,15 @@
           "caption": { "$ref": "common.schema.json#/$defs/text" }
         }
       },
+      "audio": {
+        "description": "Optional sound hint for the app. Absent: the sound regime is derived from the <id>.pressure fact (app ADR-035).",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "bed": { "enum": ["vacuum", "thin", "earthlike", "dense", "crushing", "gasGiant", "model"] },
+          "gain": { "type": "number", "minimum": 0, "maximum": 2 }
+        }
+      },
       "survival": {
         "description": "Optional «Выживешь?» data: what would kill an unprotected human here. Every number in helmetOff.text must appear in the display of a fact in helmetOff.factIds (validate.py).",
         "type": "object",
