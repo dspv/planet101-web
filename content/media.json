@@ -1,0 +1,272 @@
+[
+  {
+    "id": "apollo_bootprint",
+    "kind": "photo",
+    "missionId": "apollo",
+    "worldIds": [
+      "moon"
+    ],
+    "title": "След ботинка астронавта в лунном грунте, «Аполлон-11», 1969",
+    "credit": "NASA",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/as11-40-5878",
+    "originalUrl": "https://images-assets.nasa.gov/image/as11-40-5878/as11-40-5878~large.jpg",
+    "file": "apollo_bootprint.jpg"
+  },
+  {
+    "id": "mariner10_mercury",
+    "kind": "photo",
+    "missionId": "mariner10",
+    "worldIds": [
+      "mercury"
+    ],
+    "title": "Меркурий крупным планом, снимок «Маринера-10», 1975",
+    "credit": "NASA/JPL",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA02416",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA02416/PIA02416~orig.jpg",
+    "file": "mariner10_mercury.jpg"
+  },
+  {
+    "id": "magellan_venus",
+    "kind": "photo",
+    "missionId": "magellan",
+    "worldIds": [
+      "venus"
+    ],
+    "title": "Поверхность Венеры под облаками: радарная мозаика «Магеллана»",
+    "credit": "NASA/JPL",
+    "license": "public_domain",
+    "licenseNote": "Радарная мозаика на компьютерном глобусе, пробелы заполнены данными Pioneer Venus (тоже NASA); цвета условные.",
+    "sourceUrl": "https://images.nasa.gov/details/PIA00478",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA00478/PIA00478~large.jpg",
+    "file": "magellan_venus.jpg"
+  },
+  {
+    "id": "galileo_europa",
+    "kind": "photo",
+    "missionId": "galileo",
+    "worldIds": [
+      "europa"
+    ],
+    "title": "Трещины и хребты на ледяной коре Европы, снимок «Галилео» (цвета усилены)",
+    "credit": "NASA/JPL-Caltech",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA17737",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA17737/PIA17737~orig.jpg",
+    "file": "galileo_europa.jpg"
+  },
+  {
+    "id": "viking1_first_photo",
+    "kind": "photo",
+    "missionId": "viking1",
+    "worldIds": [
+      "mars"
+    ],
+    "title": "Первая фотография с поверхности Марса, «Викинг-1», 20 июля 1976",
+    "credit": "NASA/JPL",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA00381",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA00381/PIA00381~orig.jpg",
+    "file": "viking1_first_photo.jpg"
+  },
+  {
+    "id": "viking2_first_photo",
+    "kind": "photo",
+    "missionId": "viking2",
+    "worldIds": [
+      "mars"
+    ],
+    "title": "Первый снимок «Викинга-2» с равнины Утопия на Марсе",
+    "credit": "NASA/JPL",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA00396",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA00396/PIA00396~orig.jpg",
+    "file": "viking2_first_photo.jpg"
+  },
+  {
+    "id": "voyager1_titan",
+    "kind": "photo",
+    "missionId": "voyager1",
+    "worldIds": [
+      "titan"
+    ],
+    "title": "Оранжевая дымка Титана, снимок «Вояджера-1», 1980",
+    "credit": "NASA/JPL",
+    "license": "public_domain",
+    "licenseNote": "В метаданных: центр NASA Ames, автор JPL.",
+    "sourceUrl": "https://images.nasa.gov/details/ARC-1980-AC80-7007",
+    "originalUrl": "https://images-assets.nasa.gov/image/ARC-1980-AC80-7007/ARC-1980-AC80-7007~large.jpg",
+    "file": "voyager1_titan.jpg"
+  },
+  {
+    "id": "curiosity_gale",
+    "kind": "photo",
+    "missionId": "curiosity",
+    "worldIds": [
+      "mars"
+    ],
+    "title": "Кратер Гейл: холм Маунт-Ремаркабл, навигационная камера «Кьюриосити»",
+    "credit": "NASA/JPL-Caltech",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA18083",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA18083/PIA18083~medium.jpg",
+    "file": "curiosity_gale.jpg"
+  },
+  {
+    "id": "spirit_gusev",
+    "kind": "photo",
+    "missionId": "spirit",
+    "worldIds": [
+      "mars"
+    ],
+    "title": "Круговая панорама кратера Гусева, навигационная камера «Спирита», 2005",
+    "credit": "NASA/JPL-Caltech",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA07410",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA07410/PIA07410~large.jpg",
+    "file": "spirit_gusev.jpg"
+  },
+  {
+    "id": "spitzer_trappist",
+    "kind": "illustration",
+    "missionId": "spitzer",
+    "worldIds": [
+      "trappist"
+    ],
+    "title": "Художественная модель: семь планет TRAPPIST-1 проходят перед своей звездой",
+    "credit": "NASA/JPL-Caltech",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA21429",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA21429/PIA21429~large.jpg",
+    "file": "spitzer_trappist.jpg"
+  },
+  {
+    "id": "jwst_mirrors",
+    "kind": "photo",
+    "missionId": "jwst",
+    "worldIds": [],
+    "title": "Зеркала телескопа «Джеймс Уэбб» во время сборки в центре Годдарда",
+    "credit": "NASA/Chris Gunn",
+    "license": "public_domain",
+    "licenseNote": "Фото сотрудника NASA (Chris Gunn), центр Годдарда.",
+    "sourceUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000440",
+    "originalUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000440/GSFC_20171208_Archive_e000440~orig.jpg",
+    "file": "jwst_mirrors.jpg"
+  },
+  {
+    "id": "grace_fo_satellites",
+    "kind": "illustration",
+    "missionId": "grace",
+    "worldIds": [
+      "earth"
+    ],
+    "title": "Иллюстрация: спутники-близнецы GRACE-FO на орбите",
+    "credit": "NASA/JPL-Caltech",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA22445",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA22445/PIA22445~large.jpg",
+    "file": "grace_fo_satellites.jpg"
+  },
+  {
+    "id": "grail_formation",
+    "kind": "illustration",
+    "missionId": "grail",
+    "worldIds": [
+      "moon"
+    ],
+    "title": "Иллюстрация: аппараты-близнецы GRAIL летят над Луной",
+    "credit": "NASA/JPL-Caltech",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA13956",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA13956/PIA13956~large.jpg",
+    "file": "grail_formation.jpg"
+  },
+  {
+    "id": "europa_clipper_spacecraft",
+    "kind": "photo",
+    "missionId": "europa_clipper",
+    "worldIds": [],
+    "title": "«Европа Клиппер» перед запуском в Космическом центре Кеннеди, 2024",
+    "credit": "NASA/Kim Shiflett",
+    "license": "public_domain",
+    "licenseNote": "Фото сотрудника NASA (Kim Shiflett), Космический центр Кеннеди.",
+    "sourceUrl": "https://images.nasa.gov/details/KSC-20240528-PH-KLS01_0036",
+    "originalUrl": "https://images-assets.nasa.gov/image/KSC-20240528-PH-KLS01_0036/KSC-20240528-PH-KLS01_0036~large.jpg",
+    "file": "europa_clipper_spacecraft.jpg"
+  },
+  {
+    "id": "juno_jupiter",
+    "kind": "illustration",
+    "missionId": "juno",
+    "worldIds": [
+      "jupiter"
+    ],
+    "title": "Иллюстрация: «Юнона» над южным полюсом Юпитера",
+    "credit": "NASA/JPL-Caltech",
+    "license": "public_domain",
+    "sourceUrl": "https://images.nasa.gov/details/PIA21771",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA21771/PIA21771~large.jpg",
+    "file": "juno_jupiter.jpg"
+  },
+  {
+    "id": "cassini_titan",
+    "kind": "photo",
+    "missionId": "cassini",
+    "worldIds": [
+      "titan"
+    ],
+    "title": "Два вида Титана: «Кассини» заглянул сквозь дымку в инфракрасном свете",
+    "credit": "NASA/JPL-Caltech/Space Science Institute",
+    "license": "other",
+    "licenseNote": "Подпись называет партнёра NASA (Space Science Institute), а не только NASA. Снимок опубликован NASA (JPL Photojournal / NASA Image Library) без пометки об авторском праве; правила использования изображений JPL разрешают использование с указанием автора, но это не чисто NASA-изображение — нужна проверка человеком.",
+    "sourceUrl": "https://images.nasa.gov/details/PIA21624",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA21624/PIA21624~orig.jpg",
+    "file": "cassini_titan.jpg"
+  },
+  {
+    "id": "lro_farside",
+    "kind": "photo",
+    "missionId": "lro",
+    "worldIds": [
+      "moon"
+    ],
+    "title": "Обратная сторона Луны, мозаика камеры LROC",
+    "credit": "NASA/Goddard/Arizona State University",
+    "license": "other",
+    "licenseNote": "Подпись называет партнёра NASA (Arizona State University), а не только NASA. Снимок опубликован NASA (JPL Photojournal / NASA Image Library) без пометки об авторском праве; правила использования изображений JPL разрешают использование с указанием автора, но это не чисто NASA-изображение — нужна проверка человеком.",
+    "sourceUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001939",
+    "originalUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001939/GSFC_20171208_Archive_e001939~medium.jpg",
+    "file": "lro_farside.jpg"
+  },
+  {
+    "id": "new_horizons_pluto",
+    "kind": "photo",
+    "missionId": "new_horizons",
+    "worldIds": [
+      "pluto"
+    ],
+    "title": "Плутон в усиленных цветах, «Новые горизонты», 14 июля 2015",
+    "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Southwest Research Institute",
+    "license": "other",
+    "licenseNote": "Подпись называет партнёра NASA (Johns Hopkins APL, Southwest Research Institute), а не только NASA. Снимок опубликован NASA (JPL Photojournal / NASA Image Library) без пометки об авторском праве; правила использования изображений JPL разрешают использование с указанием автора, но это не чисто NASA-изображение — нужна проверка человеком.",
+    "sourceUrl": "https://images.nasa.gov/details/PIA19952",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA19952/PIA19952~large.jpg",
+    "file": "new_horizons_pluto.jpg"
+  },
+  {
+    "id": "messenger_mercury",
+    "kind": "photo",
+    "missionId": "messenger",
+    "worldIds": [
+      "mercury"
+    ],
+    "title": "Меркурий в усиленных цветах по снимкам «Мессенджера»",
+    "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Carnegie Institution of Washington",
+    "license": "other",
+    "licenseNote": "Подпись называет партнёра NASA (Johns Hopkins APL, Carnegie Institution of Washington), а не только NASA. Снимок опубликован NASA (JPL Photojournal / NASA Image Library) без пометки об авторском праве; правила использования изображений JPL разрешают использование с указанием автора, но это не чисто NASA-изображение — нужна проверка человеком.",
+    "sourceUrl": "https://images.nasa.gov/details/PIA17386",
+    "originalUrl": "https://images-assets.nasa.gov/image/PIA17386/PIA17386~large.jpg",
+    "file": "messenger_mercury.jpg"
+  }
+]

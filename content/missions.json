@@ -1,0 +1,690 @@
+[
+  {
+    "id": "apollo",
+    "name": "Аполлон",
+    "nameOriginal": "Apollo",
+    "agency": ["NASA"],
+    "type": "crewed",
+    "launch": "1968-10-11",
+    "arrival": "1969-07-20",
+    "end": "1972-12",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Пилотируемая программа NASA целиком: здесь собраны все полёты «Аполлонов» с людьми, от первого («Аполлон-7», 1968) до последнего («Аполлон-17», 1972). Шесть экспедиций сели на Луну, и по ней прошли 12 астронавтов. Они привезли на Землю 382 кг лунных камней, грунта и пыли.",
+    "worldIds": ["moon"],
+    "instruments": [
+      { "name": "ALSEP", "what": "Набор приборов, оставленный на Луне: сейсмометры, магнитометры, датчики потока тепла" },
+      { "name": "Лазерные отражатели", "what": "Зеркала-уголки, по которым с Земли лазером измеряют расстояние до Луны" },
+      { "name": "Инструменты для сбора образцов", "what": "Совки, щипцы и трубки для взятия кернов — грунт и камни для лабораторий на Земле" }
+    ],
+    "discoveries": [
+      "Первые люди на другом небесном теле — «Аполлон-11», июль 1969 года",
+      "Шесть экспедиций доставили на Землю 382 кг лунного вещества",
+      "Лунный грунт и камни до сих пор изучают в лабораториях"
+    ],
+    "mediaIds": ["apollo_bootprint"],
+    "links": [
+      { "title": "NASA: The Apollo Program", "url": "https://www.nasa.gov/the-apollo-program/" },
+      { "title": "NASA: Lunar Sample Curation", "url": "https://curator.jsc.nasa.gov/lunar/" }
+    ]
+  },
+  {
+    "id": "bepicolombo",
+    "name": "БепиКоломбо",
+    "nameOriginal": "BepiColombo",
+    "agency": ["ESA", "JAXA"],
+    "type": "orbiter",
+    "launch": "2018-10-20",
+    "arrival": "2026-11-21",
+    "end": null,
+    "status": "en_route",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Совместная миссия Европы и Японии: два орбитальных аппарата летят к Меркурию вместе. Перелётный модуль отделился в сентябре 2026 года, выход на орбиту Меркурия запланирован на 21 ноября 2026 года, а научная работа — с апреля 2027 года.",
+    "worldIds": ["mercury"],
+    "instruments": [
+      { "name": "MERTIS", "what": "Инфракрасный спектрометр и радиометр: температура и минералы поверхности" },
+      { "name": "BELA", "what": "Лазерный высотомер: рельеф Меркурия" },
+      { "name": "MORE", "what": "Радиоэксперимент: гравитационное поле и внутреннее строение" },
+      { "name": "MPO-MAG", "what": "Магнитометр: магнитное поле Меркурия" }
+    ],
+    "discoveries": [
+      "Во время шести пролётов мимо Меркурия сфотографировал планету и изучил её окрестности ещё до выхода на орбиту"
+    ],
+    "mediaIds": [],
+    "links": [
+      { "title": "ESA: BepiColombo", "url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo" },
+      { "title": "ESA: Latest updates — BepiColombo's arrival at Mercury", "url": "https://www.esa.int/Science_Exploration/Space_Science/BepiColombo/Latest_updates_BepiColombo_s_arrival_at_Mercury" }
+    ]
+  },
+  {
+    "id": "cassini",
+    "name": "Кассини",
+    "nameOriginal": "Cassini",
+    "agency": ["NASA", "ESA", "ASI"],
+    "type": "orbiter",
+    "launch": "1997-10-15",
+    "arrival": "2004-07-01",
+    "end": "2017-09-15",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Первый аппарат на орбите Сатурна. «Кассини» тринадцать лет изучал планету, кольца и спутники, доставил к Титану зонд «Гюйгенс» и своим радаром заглянул под дымку Титана. В 2017 году его специально направили в атмосферу Сатурна.",
+    "worldIds": ["titan"],
+    "instruments": [
+      { "name": "RADAR", "what": "Радар: видел поверхность Титана сквозь дымку, нашёл моря и озёра" },
+      { "name": "ISS", "what": "Камеры: снимки Сатурна, колец и спутников" },
+      { "name": "VIMS", "what": "Спектрометр видимого и инфракрасного света: состав поверхности и атмосферы" },
+      { "name": "CIRS", "what": "Инфракрасный спектрометр: температура атмосферы и поверхности" },
+      { "name": "Radio Science", "what": "Радиоэксперимент: гравитация и просвечивание атмосфер радиосигналом" }
+    ],
+    "discoveries": [
+      "На Титане есть моря и реки из жидкого метана и этана",
+      "У спутника Энцелад из-подо льда бьют струи водяного пара"
+    ],
+    "mediaIds": ["cassini_titan"],
+    "links": [
+      { "title": "NASA: Cassini", "url": "https://science.nasa.gov/mission/cassini/" },
+      { "title": "ESA: Cassini-Huygens", "url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens" }
+    ]
+  },
+  {
+    "id": "curiosity",
+    "name": "Кьюриосити",
+    "nameOriginal": "Curiosity",
+    "agency": ["NASA"],
+    "type": "rover",
+    "launch": "2011-11-26",
+    "arrival": "2012-08-06",
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Марсоход размером с автомобиль из миссии Mars Science Laboratory. С 2012 года он работает в кратере Гейл и поднимается по склонам горы Шарп, читая слои горных пород как летопись древнего Марса. На нём есть метеостанция, которая каждый день измеряет давление и температуру.",
+    "worldIds": ["mars"],
+    "instruments": [
+      { "name": "Mastcam", "what": "Цветные камеры на мачте: пейзажи, закаты, облака" },
+      { "name": "ChemCam", "what": "Лазер испаряет крошку камня, а спектрометр определяет её состав" },
+      { "name": "SAM", "what": "Мини-лаборатория: состав атмосферы и грунта, поиск органических молекул" },
+      { "name": "REMS", "what": "Метеостанция: давление, температура, ветер и влажность" },
+      { "name": "RAD", "what": "Датчик радиации на поверхности Марса" }
+    ],
+    "discoveries": [
+      "В кратере Гейл когда-то было озеро, в котором могли бы жить микробы",
+      "В марсианских породах найдены органические молекулы",
+      "Сфотографировал голубоватый закат на Марсе"
+    ],
+    "mediaIds": ["curiosity_gale"],
+    "links": [{ "title": "NASA: Curiosity", "url": "https://science.nasa.gov/mission/msl-curiosity/" }]
+  },
+  {
+    "id": "europa_clipper",
+    "name": "Европа Клиппер",
+    "nameOriginal": "Europa Clipper",
+    "agency": ["NASA"],
+    "type": "orbiter",
+    "launch": "2024-10-14",
+    "arrival": "2030-04",
+    "end": null,
+    "status": "en_route",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Самый большой межпланетный аппарат NASA летит к Юпитеру, чтобы изучить его спутник Европу. Прибытие ожидается в апреле 2030 года: аппарат выйдет на орбиту вокруг Юпитера и много раз пролетит близко к Европе. Главный вопрос — есть ли под ледяной корой условия, пригодные для жизни.",
+    "worldIds": ["europa", "jupiter"],
+    "instruments": [
+      { "name": "REASON", "what": "Радар: просвечивает ледяную кору и ищет воду внутри неё" },
+      { "name": "ECM", "what": "Магнитометр: проверит, есть ли под льдом солёный океан" },
+      { "name": "E-THEMIS", "what": "Тепловая камера: ищет тёплые участки на поверхности" },
+      { "name": "MISE", "what": "Инфракрасный спектрометр: состав льда и солей" },
+      { "name": "EIS", "what": "Камеры: подробная карта поверхности Европы" }
+    ],
+    "discoveries": [],
+    "mediaIds": ["europa_clipper_spacecraft"],
+    "links": [{ "title": "NASA: Europa Clipper", "url": "https://science.nasa.gov/mission/europa-clipper/" }]
+  },
+  {
+    "id": "galileo",
+    "name": "Галилео",
+    "nameOriginal": "Galileo",
+    "agency": ["NASA"],
+    "type": "orbiter",
+    "launch": "1989-10-18",
+    "arrival": "1995-12-07",
+    "end": "2003-09-21",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Первый аппарат на орбите Юпитера. В день прибытия, 7 декабря 1995 года, его спускаемый зонд вошёл в атмосферу Юпитера и передавал данные около часа, пока не замолчал от жары и давления. Восемь лет «Галилео» изучал Юпитер и его спутники, а в 2003 году его направили в атмосферу планеты.",
+    "worldIds": ["jupiter", "europa"],
+    "instruments": [
+      { "name": "Атмосферный зонд", "what": "Спускался на парашюте в атмосферу Юпитера: температура, давление, состав газа" },
+      { "name": "MAG", "what": "Магнитометр: заметил, как Европа «отвечает» на магнитное поле Юпитера" },
+      { "name": "SSI", "what": "Камера: снимки Юпитера и его спутников" },
+      { "name": "NIMS", "what": "Инфракрасный спектрометр: состав облаков и поверхностей спутников" }
+    ],
+    "discoveries": [
+      "Первое прямое измерение атмосферы Юпитера изнутри — зонд в 1995 году",
+      "Магнитные данные указывают на солёный слой воды под льдом Европы, Ганимеда и Каллисто"
+    ],
+    "mediaIds": ["galileo_europa"],
+    "links": [{ "title": "NASA: Galileo", "url": "https://science.nasa.gov/mission/galileo/" }]
+  },
+  {
+    "id": "grace",
+    "name": "GRACE и GRACE-FO",
+    "nameOriginal": "GRACE / GRACE Follow-On (Gravity Recovery and Climate Experiment)",
+    "agency": ["NASA", "DLR", "GFZ"],
+    "type": "orbiter",
+    "launch": "2002-03-17",
+    "arrival": null,
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Эта карточка объединяет две миссии: GRACE (летала с 2002 по 2017 год) и её продолжение GRACE-FO (запущена 22 мая 2018 года и работает сейчас). В обеих два одинаковых спутника летят друг за другом и очень точно измеряют расстояние между собой. Оно меняется, когда под ними сильнее или слабее притяжение, — так строят карту гравитации Земли.",
+    "worldIds": ["earth"],
+    "instruments": [
+      { "name": "KBR", "what": "Микроволновая связь между спутниками: расстояние между ними с огромной точностью" },
+      { "name": "LRI", "what": "Лазерный дальномер на GRACE-FO: ещё более точное измерение расстояния" },
+      { "name": "Акселерометры", "what": "Отделяют гравитацию от торможения о воздух и давления солнечного света" }
+    ],
+    "discoveries": [
+      "Следят, как тают ледники Гренландии и Антарктиды",
+      "Показывают, где на Земле убывают подземные воды"
+    ],
+    "mediaIds": ["grace_fo_satellites"],
+    "links": [
+      { "title": "NASA JPL: GRACE-FO", "url": "https://gracefo.jpl.nasa.gov/mission/overview/" },
+      { "title": "NASA JPL: GRACE", "url": "https://grace.jpl.nasa.gov/mission/grace/" }
+    ]
+  },
+  {
+    "id": "grail",
+    "name": "GRAIL",
+    "nameOriginal": "GRAIL (Gravity Recovery and Interior Laboratory)",
+    "agency": ["NASA"],
+    "type": "orbiter",
+    "launch": "2011-09-10",
+    "arrival": "2011-12-31",
+    "end": "2012-12-17",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Два аппарата-близнеца, Ebb и Flow, летали вокруг Луны друг за другом. Над местами с более сильным притяжением они чуть сближались или расходились, а приборы измеряли эти изменения. Так получилась самая подробная карта гравитации Луны; в конце миссии аппараты направили на лунную гору.",
+    "worldIds": ["moon"],
+    "instruments": [
+      { "name": "LGRS", "what": "Радиосвязь между аппаратами: изменения скорости сближения — карта гравитации" },
+      { "name": "MoonKAM", "what": "Камеры, снимки которых заказывали школьники" }
+    ],
+    "discoveries": [
+      "Составил самую подробную карту гравитационного поля Луны",
+      "Показал, как устроена лунная кора под поверхностью"
+    ],
+    "mediaIds": ["grail_formation"],
+    "links": [{ "title": "NASA: GRAIL", "url": "https://science.nasa.gov/mission/grail/" }]
+  },
+  {
+    "id": "huygens",
+    "name": "Гюйгенс",
+    "nameOriginal": "Huygens",
+    "agency": ["ESA"],
+    "parentMissionId": "cassini",
+    "type": "lander",
+    "launch": "1997-10-15",
+    "arrival": "2005-01-14",
+    "end": "2005-01-14",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Европейский зонд, который прилетел к Сатурну вместе с «Кассини» и 14 января 2005 года сел на Титан. Во время спуска на парашюте он измерял атмосферу и фотографировал местность. После посадки он ещё 72 минуты передавал данные с поверхности, пока «Кассини» не ушёл за горизонт.",
+    "worldIds": ["titan"],
+    "instruments": [
+      { "name": "HASI", "what": "Температура, давление и электрические свойства атмосферы" },
+      { "name": "DISR", "what": "Камеры и измерение света во время спуска" },
+      { "name": "GCMS", "what": "Масс-спектрометр: состав газов атмосферы" },
+      { "name": "SSP", "what": "Датчики свойств поверхности в месте посадки" }
+    ],
+    "discoveries": [
+      "Первая и пока единственная посадка во внешней Солнечной системе",
+      "Сфотографировал русла и окатанную гальку изо льда"
+    ],
+    "mediaIds": [],
+    "links": [{ "title": "ESA: Cassini-Huygens", "url": "https://www.esa.int/Science_Exploration/Space_Science/Cassini-Huygens" }]
+  },
+  {
+    "id": "juice",
+    "name": "JUICE",
+    "nameOriginal": "JUICE (JUpiter ICy moons Explorer)",
+    "agency": ["ESA"],
+    "type": "orbiter",
+    "launch": "2023-04-14",
+    "arrival": "2031-07",
+    "end": null,
+    "status": "en_route",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Европейский аппарат летит к Юпитеру, чтобы изучить три его ледяных спутника — Ганимед, Каллисто и Европу, под корой которых может быть океан. В сентябре 2026 года он пролетел мимо Земли, чтобы набрать скорость. Прибытие к Юпитеру ожидается в июле 2031 года.",
+    "worldIds": ["jupiter", "europa"],
+    "instruments": [
+      { "name": "RIME", "what": "Радар: просвечивает ледяную кору спутников" },
+      { "name": "J-MAG", "what": "Магнитометр: ищет подлёдные океаны по магнитному «отклику»" },
+      { "name": "MAJIS", "what": "Спектрометр: состав облаков Юпитера и поверхностей спутников" },
+      { "name": "JANUS", "what": "Камера: снимки спутников и Юпитера" },
+      { "name": "3GM", "what": "Радиоэксперимент: гравитация спутников и просвечивание атмосфер" }
+    ],
+    "discoveries": [],
+    "mediaIds": [],
+    "links": [{ "title": "ESA: Juice", "url": "https://www.esa.int/Science_Exploration/Space_Science/Juice" }]
+  },
+  {
+    "id": "juno",
+    "name": "Юнона",
+    "nameOriginal": "Juno",
+    "agency": ["NASA"],
+    "type": "orbiter",
+    "launch": "2011-08-05",
+    "arrival": "2016-07-05",
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Аппарат на полярной орбите вокруг Юпитера с 2016 года. Он раз за разом проносится низко над облаками и по сдвигу частоты своего радиосигнала измеряет гравитацию планеты, а значит — её внутреннее строение. В расширенной миссии «Юнона» пролетела также мимо Ганимеда, Европы и Ио.",
+    "worldIds": ["jupiter", "europa"],
+    "instruments": [
+      { "name": "Gravity Science", "what": "Радиоэксперимент: гравитационное поле и внутреннее строение Юпитера" },
+      { "name": "MWR", "what": "Микроволновый радиометр: заглядывает глубоко под облака" },
+      { "name": "MAG", "what": "Магнитометр: магнитное поле Юпитера" },
+      { "name": "JunoCam", "what": "Цветная камера: облака, вихри, полюса" },
+      { "name": "JIRAM", "what": "Инфракрасная камера и спектрометр: полярные сияния и тепло атмосферы" }
+    ],
+    "discoveries": [
+      "Над полюсами Юпитера кружат группы огромных циклонов",
+      "Уточнила размер и форму Юпитера: он чуть меньше и сильнее сплюснут, чем считалось",
+      "Впервые измерила температуру под поверхностью спутника Ио"
+    ],
+    "mediaIds": ["juno_jupiter"],
+    "links": [
+      { "title": "NASA: Juno", "url": "https://science.nasa.gov/mission/juno/" },
+      { "title": "NASA: Juno captures Jupiter moon Thebe (May 2026)", "url": "https://science.nasa.gov/photojournal/nasas-juno-misson-captures-jupiter-moon-thebe/" }
+    ]
+  },
+  {
+    "id": "jwst",
+    "name": "Джеймс Уэбб",
+    "nameOriginal": "James Webb Space Telescope",
+    "agency": ["NASA", "ESA", "CSA"],
+    "type": "telescope",
+    "launch": "2021-12-25",
+    "arrival": "2022-01-24",
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Крупнейший космический телескоп, работающий в инфракрасном свете. Он находится далеко за орбитой Луны, в точке Лагранжа L2. Среди его целей — планеты TRAPPIST-1: телескоп ловит их тепло и свет звезды, прошедший сквозь их возможные атмосферы.",
+    "worldIds": ["trappist"],
+    "instruments": [
+      { "name": "NIRCam", "what": "Камера ближнего инфракрасного диапазона" },
+      { "name": "NIRSpec", "what": "Спектрограф: состав атмосфер по свету, прошедшему сквозь них" },
+      { "name": "MIRI", "what": "Камера и спектрометр среднего инфракрасного диапазона: тепло планет" },
+      { "name": "NIRISS", "what": "Камера и спектрограф для наблюдений транзитов экзопланет" }
+    ],
+    "discoveries": [
+      "Измерил тепловое излучение планеты TRAPPIST-1b: у неё, похоже, нет плотной атмосферы"
+    ],
+    "mediaIds": ["jwst_mirrors"],
+    "links": [{ "title": "NASA: James Webb Space Telescope", "url": "https://science.nasa.gov/mission/webb/" }]
+  },
+  {
+    "id": "lro",
+    "name": "Лунный разведчик LRO",
+    "nameOriginal": "Lunar Reconnaissance Orbiter",
+    "agency": ["NASA"],
+    "type": "orbiter",
+    "launch": "2009-06-18",
+    "arrival": "2009-06-23",
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Орбитальный аппарат, который изучает Луну с 2009 года — дольше всех аппаратов на лунной орбите. Он составляет подробные карты рельефа и снимки поверхности. Его радиометр Diviner измеряет, как нагревается и остывает лунная поверхность днём и ночью.",
+    "worldIds": ["moon"],
+    "instruments": [
+      { "name": "Diviner", "what": "Инфракрасный радиометр: температура поверхности Луны" },
+      { "name": "LROC", "what": "Камеры: подробные снимки поверхности" },
+      { "name": "LOLA", "what": "Лазерный высотомер: карта рельефа" },
+      { "name": "LAMP", "what": "Ультрафиолетовый спектрограф: ищет лёд в вечной тени" },
+      { "name": "Mini-RF", "what": "Радар: свойства грунта в затенённых кратерах" }
+    ],
+    "discoveries": [
+      "Нашёл на дне вечно затенённых кратеров у полюсов одни из самых холодных мест в Солнечной системе",
+      "Сфотографировал с орбиты места посадок «Аполлонов»"
+    ],
+    "mediaIds": ["lro_farside"],
+    "links": [{ "title": "NASA: Lunar Reconnaissance Orbiter", "url": "https://science.nasa.gov/mission/lro/" }]
+  },
+  {
+    "id": "magellan",
+    "name": "Магеллан",
+    "nameOriginal": "Magellan",
+    "agency": ["NASA"],
+    "type": "orbiter",
+    "launch": "1989-05-04",
+    "arrival": "1990-08-10",
+    "end": "1994-10-13",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Аппарат на орбите Венеры, который радаром смотрел сквозь её плотные облака. К сентябрю 1992 года он нанёс на карту 98% поверхности планеты, а затем измерял её гравитацию. В 1994 году его направили в атмосферу Венеры.",
+    "worldIds": ["venus"],
+    "instruments": [
+      { "name": "Радар с синтезированной апертурой", "what": "Снимки поверхности сквозь облака" },
+      { "name": "Радиовысотомер", "what": "Высота гор и глубина равнин" },
+      { "name": "Радиоэксперимент", "what": "Гравитационное поле Венеры по сдвигу частоты сигнала" }
+    ],
+    "discoveries": [
+      "Нанёс на карту 98% поверхности Венеры",
+      "Показал, что Венера покрыта вулканами и застывшими лавовыми равнинами"
+    ],
+    "mediaIds": ["magellan_venus"],
+    "links": [{ "title": "NASA: Magellan", "url": "https://science.nasa.gov/mission/magellan/" }]
+  },
+  {
+    "id": "mariner10",
+    "name": "Маринер-10",
+    "nameOriginal": "Mariner 10",
+    "agency": ["NASA"],
+    "type": "flyby",
+    "launch": "1973-11-03",
+    "arrival": "1974-03-29",
+    "end": "1975-03-24",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Первый аппарат, побывавший у Меркурия. Пролетев мимо Венеры в феврале 1974 года, он трижды пронёсся рядом с Меркурием — в марте и сентябре 1974 и в марте 1975 года. Он сфотографировал изрытую кратерами поверхность и измерил её температуру инфракрасным радиометром.",
+    "worldIds": ["mercury", "venus"],
+    "instruments": [
+      { "name": "Телекамеры", "what": "Снимки Меркурия и Венеры" },
+      { "name": "Инфракрасный радиометр", "what": "Температура поверхности Меркурия" },
+      { "name": "Магнитометр", "what": "Магнитное поле вокруг планеты" },
+      { "name": "Ультрафиолетовые спектрометры", "what": "Поиск газов у поверхности и в атмосфере" }
+    ],
+    "discoveries": [
+      "Первые снимки Меркурия вблизи: поверхность в кратерах, похожая на лунную",
+      "Обнаружил у Меркурия магнитное поле"
+    ],
+    "mediaIds": ["mariner10_mercury"],
+    "links": [{ "title": "NASA: Mariner 10", "url": "https://science.nasa.gov/mission/mariner-10/" }]
+  },
+  {
+    "id": "messenger",
+    "name": "Мессенджер",
+    "nameOriginal": "MESSENGER (MErcury Surface, Space ENvironment, GEochemistry, and Ranging)",
+    "agency": ["NASA"],
+    "type": "orbiter",
+    "launch": "2004-08-03",
+    "arrival": "2011-03-18",
+    "end": "2015-04-30",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Первый аппарат на орбите Меркурия. Четыре года он снимал всю планету, измерял её состав, рельеф и магнитное поле. 30 апреля 2015 года, когда закончилось топливо, он упал на поверхность Меркурия.",
+    "worldIds": ["mercury"],
+    "instruments": [
+      { "name": "MDIS", "what": "Камеры: карта всей поверхности" },
+      { "name": "MLA", "what": "Лазерный высотомер: рельеф, в том числе тёмных кратеров у полюсов" },
+      { "name": "GRS и NS", "what": "Гамма- и нейтронный спектрометры: химический состав и водород у полюсов" },
+      { "name": "MAG", "what": "Магнитометр: магнитное поле Меркурия" }
+    ],
+    "discoveries": [
+      "Нашёл водяной лёд в кратерах у полюсов, куда никогда не заглядывает Солнце",
+      "Впервые сфотографировал всю поверхность Меркурия"
+    ],
+    "mediaIds": ["messenger_mercury"],
+    "links": [{ "title": "NASA: MESSENGER", "url": "https://science.nasa.gov/mission/messenger/" }]
+  },
+  {
+    "id": "new_horizons",
+    "name": "Новые горизонты",
+    "nameOriginal": "New Horizons",
+    "agency": ["NASA"],
+    "type": "flyby",
+    "launch": "2006-01-19",
+    "arrival": "2015-07-14",
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Первый аппарат у Плутона: 14 июля 2015 года он пролетел над ним и его спутником Хароном. 1 января 2019 года пролетел мимо Аррокота — самого далёкого объекта, который когда-либо изучали вблизи. Сейчас аппарат исправен и продолжает работать в поясе Койпера.",
+    "worldIds": ["pluto"],
+    "instruments": [
+      { "name": "LORRI", "what": "Телескопическая камера: снимки поверхности с большого расстояния" },
+      { "name": "Ralph", "what": "Цветная камера и инфракрасный спектрометр: льды на поверхности" },
+      { "name": "Alice", "what": "Ультрафиолетовый спектрометр: состав атмосферы при покрытии Солнца и звёзд" },
+      { "name": "REX", "what": "Радиоэксперимент: давление и температура атмосферы" }
+    ],
+    "discoveries": [
+      "На Плутоне огромная равнина из азотного льда — светлое «сердце»",
+      "Атмосфера Плутона окутана голубоватой слоистой дымкой",
+      "Первый пролёт мимо объекта пояса Койпера — Аррокота"
+    ],
+    "mediaIds": ["new_horizons_pluto"],
+    "links": [{ "title": "NASA: New Horizons", "url": "https://science.nasa.gov/mission/new-horizons/" }]
+  },
+  {
+    "id": "spirit",
+    "name": "Спирит",
+    "nameOriginal": "Spirit (Mars Exploration Rover A)",
+    "agency": ["NASA"],
+    "type": "rover",
+    "launch": "2003-06-10",
+    "arrival": "2004-01-04",
+    "end": "2011-05-25",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Марсоход-близнец «Оппортьюнити», работавший в кратере Гусева. Он проехал по равнине, поднялся на холмы и нашёл следы древней воды. В 2009 году Спирит застрял в мягком грунте, последний сигнал пришёл 22 марта 2010 года, а в 2011 году NASA прекратило попытки связи.",
+    "worldIds": ["mars"],
+    "instruments": [
+      { "name": "Pancam", "what": "Цветные панорамные камеры: пейзажи и небо" },
+      { "name": "Navcam", "what": "Навигационные камеры" },
+      { "name": "Mini-TES", "what": "Инфракрасный спектрометр: минералы на расстоянии" },
+      { "name": "APXS и мёссбауэровский спектрометр", "what": "Химический и минеральный состав камней" }
+    ],
+    "discoveries": [
+      "Нашёл в кратере Гусева признаки того, что там когда-то была вода",
+      "Снял закат на Марсе: вокруг Солнца небо голубоватое"
+    ],
+    "mediaIds": ["spirit_gusev"],
+    "links": [{ "title": "NASA: Spirit", "url": "https://science.nasa.gov/mission/mer-spirit/" }]
+  },
+  {
+    "id": "spitzer",
+    "name": "Спитцер",
+    "nameOriginal": "Spitzer Space Telescope",
+    "agency": ["NASA"],
+    "type": "telescope",
+    "launch": "2003-08-25",
+    "arrival": null,
+    "end": "2020-01-30",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Космический телескоп, видевший Вселенную в инфракрасном свете. Он неделями следил за звездой TRAPPIST-1 и в 2017 году вместе с наземными телескопами показал, что вокруг неё вращаются семь планет размером с Землю. Работа телескопа завершилась 30 января 2020 года.",
+    "worldIds": ["trappist"],
+    "instruments": [
+      { "name": "IRAC", "what": "Инфракрасная камера: точная яркость звезды во время транзитов" },
+      { "name": "IRS", "what": "Инфракрасный спектрограф" },
+      { "name": "MIPS", "what": "Фотометр для дальнего инфракрасного диапазона" }
+    ],
+    "discoveries": [
+      "Подтвердил семь планет размером с Землю у звезды TRAPPIST-1, три из них — в зоне, где возможна жидкая вода"
+    ],
+    "mediaIds": ["spitzer_trappist"],
+    "links": [{ "title": "NASA: Spitzer", "url": "https://science.nasa.gov/mission/spitzer/" }]
+  },
+  {
+    "id": "trappist_telescope",
+    "name": "Телескопы TRAPPIST",
+    "nameOriginal": "TRAPPIST (TRAnsiting Planets and PlanetesImals Small Telescope)",
+    "agency": ["ULiège"],
+    "type": "telescope",
+    "launch": null,
+    "arrival": null,
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Два небольших роботизированных наземных телескопа Льежского университета (Бельгия): TRAPPIST-South в обсерватории Ла-Силья в Чили и TRAPPIST-North в обсерватории Укаймеден в Марокко. TRAPPIST-South следит за яркостью близких холодных карликовых звёзд и в 2016 году нашёл первые три планеты у звезды, которую назвали в честь телескопа, — TRAPPIST-1.",
+    "worldIds": ["trappist"],
+    "instruments": [
+      { "name": "TRAPPIST-South", "what": "60-сантиметровый телескоп-робот в обсерватории Ла-Силья (Чили)" },
+      { "name": "TRAPPIST-North", "what": "60-сантиметровый телескоп-робот в обсерватории Укаймеден (Марокко)" }
+    ],
+    "discoveries": [
+      "Открыл первые три планеты у звезды TRAPPIST-1 (2016)"
+    ],
+    "mediaIds": [],
+    "links": [
+      { "title": "ULiège: TRAPPIST", "url": "https://www.trappist.uliege.be/" },
+      { "title": "ESO: Ultracool Dwarf and the Seven Planets (eso1706)", "url": "https://www.eso.org/public/news/eso1706/" }
+    ]
+  },
+  {
+    "id": "venera7",
+    "name": "Венера-7",
+    "nameOriginal": "Венера-7",
+    "agency": ["СССР"],
+    "type": "lander",
+    "launch": "1970-08-17",
+    "arrival": "1970-12-15",
+    "end": "1970-12-15",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Советский спускаемый аппарат, первым передавший данные с поверхности другой планеты. 15 декабря 1970 года он сел на Венеру. Сигнал после посадки был очень слабым, но позже при анализе записей выяснилось, что аппарат пережил посадку и сообщал температуру.",
+    "worldIds": ["venus"],
+    "instruments": [
+      { "name": "Термометр", "what": "Температура атмосферы при спуске и на поверхности" },
+      { "name": "Барометр", "what": "Давление атмосферы при спуске" }
+    ],
+    "discoveries": [
+      "Первая мягкая посадка на другую планету с передачей данных с поверхности",
+      "Подтвердил, что на поверхности Венеры страшная жара"
+    ],
+    "mediaIds": [],
+    "links": [
+      { "title": "NASA NSSDCA: Venera — Soviet Missions to Venus", "url": "https://nssdc.gsfc.nasa.gov/planetary/venera.html" },
+      { "title": "NASA NSSDCA: Venus Exploration Timeline", "url": "https://nssdc.gsfc.nasa.gov/planetary/chronology_venus.html" }
+    ]
+  },
+  {
+    "id": "venera9",
+    "name": "Венера-9",
+    "nameOriginal": "Венера-9",
+    "agency": ["СССР"],
+    "type": "lander",
+    "launch": "1975-06-08",
+    "arrival": "1975-10-22",
+    "end": null,
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Советская миссия из двух частей: орбитального аппарата — первого искусственного спутника Венеры — и спускаемого аппарата. 22 октября 1975 года спускаемый аппарат сел на склон в области Бета и передал первый в истории снимок с поверхности другой планеты.",
+    "worldIds": ["venus"],
+    "instruments": [
+      { "name": "Панорамная камера", "what": "Снимок поверхности вокруг места посадки" },
+      { "name": "Термометр и барометр", "what": "Температура и давление на поверхности" }
+    ],
+    "discoveries": [
+      "Первая фотография с поверхности другой планеты",
+      "Орбитальный аппарат стал первым искусственным спутником Венеры"
+    ],
+    "mediaIds": [],
+    "links": [
+      { "title": "NASA NSSDCA: Venera — Soviet Missions to Venus", "url": "https://nssdc.gsfc.nasa.gov/planetary/venera.html" },
+      { "title": "NASA NSSDCA: Venus Exploration Timeline", "url": "https://nssdc.gsfc.nasa.gov/planetary/chronology_venus.html" }
+    ]
+  },
+  {
+    "id": "viking1",
+    "name": "Викинг-1",
+    "nameOriginal": "Viking 1",
+    "agency": ["NASA"],
+    "type": "lander",
+    "launch": "1975-08-20",
+    "arrival": "1976-07-20",
+    "end": "1982-11-11",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Орбитальный и посадочный аппараты, прилетевшие к Марсу вместе. Посадочный аппарат сел на Марс 20 июля 1976 года и через несколько минут прислал первую фотографию с поверхности. Его метеостанция больше шести лет передавала сводки о давлении и температуре, пока связь не прервалась из-за ошибочной команды с Земли.",
+    "worldIds": ["mars"],
+    "instruments": [
+      { "name": "Камеры посадочного аппарата", "what": "Панорамы поверхности и неба" },
+      { "name": "Метеостанция", "what": "Температура, давление и скорость ветра" },
+      { "name": "Биологические эксперименты", "what": "Поиск признаков жизни в грунте" },
+      { "name": "Газовый хромато-масс-спектрометр", "what": "Состав атмосферы и грунта" }
+    ],
+    "discoveries": [
+      "Первая фотография с поверхности Марса, сделанная сразу после посадки",
+      "Первые долгие измерения давления и температуры на Марсе"
+    ],
+    "mediaIds": ["viking1_first_photo"],
+    "links": [{ "title": "NASA: Viking 1", "url": "https://science.nasa.gov/mission/viking-1/" }]
+  },
+  {
+    "id": "viking2",
+    "name": "Викинг-2",
+    "nameOriginal": "Viking 2",
+    "agency": ["NASA"],
+    "type": "lander",
+    "launch": "1975-09-09",
+    "arrival": "1976-09-03",
+    "end": "1980-04-12",
+    "status": "completed",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Второй орбитальный и посадочный аппарат программы «Викинг». Посадочный аппарат сел 3 сентября 1976 года на равнину Утопия, далеко от «Викинга-1», и работал до апреля 1980 года. Вместе два аппарата дали первые измерения погоды в двух разных местах Марса.",
+    "worldIds": ["mars"],
+    "instruments": [
+      { "name": "Камеры посадочного аппарата", "what": "Панорамы поверхности и неба" },
+      { "name": "Метеостанция", "what": "Температура, давление и скорость ветра" },
+      { "name": "Биологические эксперименты", "what": "Поиск признаков жизни в грунте" }
+    ],
+    "discoveries": [
+      "Сфотографировал зимний иней на поверхности Марса",
+      "Измерял погоду на Марсе в другом месте, чем «Викинг-1»"
+    ],
+    "mediaIds": ["viking2_first_photo"],
+    "links": [{ "title": "NASA: Viking 2", "url": "https://science.nasa.gov/mission/viking-2/" }]
+  },
+  {
+    "id": "voyager1",
+    "name": "Вояджер-1",
+    "nameOriginal": "Voyager 1",
+    "agency": ["NASA"],
+    "type": "flyby",
+    "launch": "1977-09-05",
+    "arrival": "1980-11-12",
+    "end": null,
+    "status": "active",
+    "statusCheckedAt": "2026-10-04",
+    "verifiedBy": "agent",
+    "summary": "Аппарат пролетел мимо Юпитера в марте 1979 года и мимо Сатурна с Титаном в ноябре 1980 года. Его радиосигнал, прошедший сквозь атмосферу Титана, показал, что она плотная и состоит в основном из азота. Сейчас «Вояджер-1» — самый далёкий аппарат человечества, и часть его приборов всё ещё работает.",
+    "worldIds": ["titan", "jupiter"],
+    "instruments": [
+      { "name": "RSS", "what": "Радиоэксперимент: просвечивание атмосферы Титана радиосигналом" },
+      { "name": "ISS", "what": "Камеры: снимки Юпитера, Сатурна и их спутников" },
+      { "name": "IRIS", "what": "Инфракрасный спектрометр: температура и состав атмосфер" },
+      { "name": "MAG", "what": "Магнитометр" }
+    ],
+    "discoveries": [
+      "Атмосфера Титана плотная и состоит в основном из азота",
+      "Открыл действующие вулканы на спутнике Юпитера Ио",
+      "Первым из аппаратов вышел в межзвёздное пространство"
+    ],
+    "mediaIds": ["voyager1_titan"],
+    "links": [{ "title": "NASA: Voyager 1", "url": "https://science.nasa.gov/mission/voyager/voyager-1/" }]
+  }
+]

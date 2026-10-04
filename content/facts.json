@@ -1,0 +1,2086 @@
+[
+  {
+    "id": "mercury.surface_temp",
+    "worldId": "mercury",
+    "label": "Температура поверхности (день и ночь)",
+    "display": "от −180 до +430 °C",
+    "value": null,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Днём камни Меркурия нагреваются примерно до +430 °C, а ночью остывают до −180 °C: воздуха, который удержал бы тепло, нет. Первые замеры тепла сделали с Земли инфракрасными приборами — они улавливают тепловое излучение — и с пролётного аппарата «Маринер-10» в 1974–1975 годах. Зонд MESSENGER на орбите (2011–2015) уточнил картину, а к Меркурию летит BepiColombo.",
+      "missionIds": [
+        "mariner10",
+        "messenger",
+        "bepicolombo"
+      ],
+      "methodIds": [
+        "ir_radiometry"
+      ],
+      "year": 1974
+    },
+    "source": {
+      "title": "Mercury: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/mercury/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mercury.gravity",
+    "worldId": "mercury",
+    "label": "Сила тяжести",
+    "display": "0,38 g",
+    "value": 0.38,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу Меркурия узнали по тому, как его притяжение искривило путь пролетавших мимо аппаратов «Маринер-10» и MESSENGER. Зная массу и размер планеты, вычисляют силу тяжести на поверхности: 3,70 м/с², это 0,38 земной.",
+      "missionIds": [
+        "mariner10",
+        "messenger"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": 2011
+    },
+    "source": {
+      "title": "Mercury Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mercury.day",
+    "worldId": "mercury",
+    "label": "Солнечные сутки (от полудня до полудня)",
+    "display": "176 земных суток",
+    "value": 175.94,
+    "unit": "Earth days",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Меркурий поворачивается вокруг оси за 59 земных суток, но одновременно быстро бежит вокруг Солнца. Поэтому от одного полудня до следующего проходит около 176 земных суток — дольше, чем его год (88 суток). Вращение измерили радаром с Земли и уточнили по снимкам космических аппаратов.",
+      "missionIds": [
+        "mariner10",
+        "messenger"
+      ],
+      "methodIds": [
+        "radar"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Mercury Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mercury.atmosphere",
+    "worldId": "mercury",
+    "label": "Атмосфера",
+    "display": "Почти нет (экзосфера)",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Настоящей атмосферы у Меркурия нет — только экзосфера: редкие атомы кислорода, натрия, водорода, гелия и калия, выбитые с поверхности солнечным ветром и ударами метеоритов. Их состав определяли по спектрам — «отпечаткам» света разных веществ — с «Маринера-10» и MESSENGER.",
+      "missionIds": [
+        "mariner10",
+        "messenger"
+      ],
+      "methodIds": [
+        "spectroscopy"
+      ],
+      "year": 1974
+    },
+    "source": {
+      "title": "Mercury: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/mercury/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mercury.pressure",
+    "worldId": "mercury",
+    "label": "Давление у поверхности",
+    "display": "≈0",
+    "value": 5e-15,
+    "unit": "bar",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Давление экзосферы Меркурия меньше примерно пяти тысяч триллионных долей бара — это почти идеальная пустота, лучше, чем в большинстве земных вакуумных камер. Такая оценка получена из измерений количества атомов над поверхностью.",
+      "missionIds": [
+        "mariner10",
+        "messenger"
+      ],
+      "methodIds": [
+        "spectroscopy"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Mercury Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mercury.water_ice",
+    "worldId": "mercury",
+    "label": "Лёд в полярных кратерах",
+    "display": "Водяной лёд в вечной тени",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "В 2012 году NASA сообщило: зонд MESSENGER нашёл водяной лёд на дне кратеров у полюсов Меркурия, куда никогда не заглядывает Солнце. Доказательства три: избыток водорода, замеченный нейтронным спектрометром; необычный блеск этих мест в лазерном луче альтиметра; расчёты температуры — там всегда достаточно холодно для льда.",
+      "missionIds": [
+        "messenger"
+      ],
+      "methodIds": [
+        "spectroscopy"
+      ],
+      "year": 2012
+    },
+    "source": {
+      "title": "MESSENGER Finds New Evidence for Water Ice at Mercury's Poles (press release, 2012-11-29)",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/text/messenger_pr_20121129.txt"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mercury.lead_melts",
+    "worldId": "mercury",
+    "label": "Температура плавления свинца",
+    "display": "+327,5 °C",
+    "value": 327.5,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Свинец плавится при +327,5 °C — это измерено в земных лабораториях. Днём поверхность Меркурия нагревается примерно до +430 °C, то есть заметно горячее: кусок свинца там расплавился бы.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Lead — Melting Point",
+      "org": "PubChem, NIH",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5352425"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mercury.sun_size",
+    "worldId": "mercury",
+    "label": "Солнце в небе Меркурия",
+    "display": "В 3 раза больше, в 7 раз ярче",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Меркурий почти в три раза ближе к Солнцу, чем Земля. Поэтому с его поверхности Солнце выглядело бы более чем в три раза больше, а солнечный свет был бы до семи раз ярче. Это вычисляют по расстоянию до Солнца, которое известно очень точно.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Mercury: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/mercury/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "venus.surface_temp",
+    "worldId": "venus",
+    "label": "Температура поверхности",
+    "display": "+464 °C",
+    "value": 464,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Советские спускаемые аппараты «Венера» садились на поверхность и передавали температуру и давление, пока не выходили из строя от жары. Первой это сделала «Венера-7» в 1970 году, а «Венера-9» в 1975-м передала первые снимки с поверхности. Американский «Магеллан» в 1990–1994 годах нанёс рельеф на карту радаром, который видит сквозь облака.",
+      "missionIds": [
+        "venera7",
+        "venera9",
+        "magellan"
+      ],
+      "methodIds": [
+        "in_situ",
+        "radar"
+      ],
+      "year": 1970
+    },
+    "source": {
+      "title": "Venus Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "venus.gravity",
+    "worldId": "venus",
+    "label": "Сила тяжести",
+    "display": "0,9 g",
+    "value": 0.9,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу Венеры точно измерили по движению космических аппаратов на её орбите — по сдвигу частоты их радиосигнала. Зная массу и радиус, вычисляют силу тяжести у поверхности: 8,87 м/с², это 0,9 земной.",
+      "missionIds": [
+        "magellan"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Venus Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "venus.day",
+    "worldId": "venus",
+    "label": "Солнечные сутки (от восхода до восхода)",
+    "display": "117 земных суток",
+    "value": 116.75,
+    "unit": "Earth days",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Венера вращается очень медленно и в обратную сторону: один оборот вокруг оси занимает 243 земных суток. Но так как она ещё и идёт по орбите, от восхода до следующего восхода Солнца проходит около 117 земных суток. Здесь показаны именно солнечные сутки. Вращение измерили радаром, ведь поверхность скрыта облаками.",
+      "missionIds": [
+        "magellan"
+      ],
+      "methodIds": [
+        "radar"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Venus Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "venus.atmosphere",
+    "worldId": "venus",
+    "label": "Атмосфера",
+    "display": "Углекислый газ, облака серной кислоты",
+    "value": 96.5,
+    "unit": "% CO2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Атмосфера Венеры на 96,5% состоит из углекислого газа, а плотные облака — из капель серной кислоты. Углекислый газ работает как толстое одеяло: тепло не уходит в космос, и поверхность раскаляется. Состав измеряли приборы спускаемых аппаратов «Венера» прямо в атмосфере.",
+      "missionIds": [
+        "venera7",
+        "venera9"
+      ],
+      "methodIds": [
+        "in_situ",
+        "spectroscopy"
+      ],
+      "year": 1970
+    },
+    "source": {
+      "title": "Venus: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/venus/venus-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "venus.pressure",
+    "worldId": "venus",
+    "label": "Давление у поверхности",
+    "display": "92 бар",
+    "value": 92,
+    "unit": "bar",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Спускаемые аппараты «Венера» измерили давление прямо на поверхности: около 92 бар, в 90 с лишним раз больше, чем на Земле. Первые данные с поверхности передала «Венера-7» в 1970 году. Аппараты выдерживали от 23 минут до двух часов, прежде чем их раздавливала и прожаривала атмосфера.",
+      "missionIds": [
+        "venera7",
+        "venera9"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1970
+    },
+    "source": {
+      "title": "Venus Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "venus.pressure_depth",
+    "worldId": "venus",
+    "label": "Давление как под водой",
+    "display": "Как на глубине ≈930 м",
+    "value": 930,
+    "unit": "m",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Давление у поверхности Венеры такое же, как в земном океане на глубине более 930 метров. Это сравнение получают расчётом: каждые 10 метров воды добавляют примерно одну атмосферу давления.",
+      "missionIds": [
+        "venera7"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Venus: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/venus/venus-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "venus.hottest_planet",
+    "worldId": "venus",
+    "label": "Самая горячая планета",
+    "display": "Горячее Меркурия",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Венера почти вдвое дальше от Солнца, чем Меркурий, но на её поверхности жарче, чем где-либо ещё в Солнечной системе (кроме самого Солнца). Причина — толстая атмосфера из углекислого газа: она пропускает солнечный свет, но не выпускает тепло. Это называют парниковым эффектом.",
+      "missionIds": [
+        "venera7",
+        "magellan"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Venus: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/venus/venus-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.surface_temp",
+    "worldId": "earth",
+    "label": "Средняя температура",
+    "display": "в среднем +15 °C",
+    "value": 15,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Среднюю температуру Земли считают по миллионам измерений метеостанций, кораблей и спутников по всей планете. Получается около +15 °C, а за сутки обычно колеблется от +10 до +20 °C.",
+      "missionIds": [],
+      "methodIds": [
+        "in_situ",
+        "ir_radiometry"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Earth Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.gravity",
+    "worldId": "earth",
+    "label": "Сила тяжести",
+    "display": "1 g",
+    "value": 1,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Земная сила тяжести — точка отсчёта: 1 g, около 9,8 м/с². У поверхности её измеряют гравиметрами — очень точными «весами» для падения. А спутники-близнецы GRACE и GRACE-FO меряют гравитацию всей планеты по тому, как меняется расстояние между ними.",
+      "missionIds": [
+        "grace"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Earth Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.day",
+    "worldId": "earth",
+    "label": "Солнечные сутки",
+    "display": "24 часа",
+    "value": 24,
+    "unit": "h",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Солнечные сутки — время от полудня до полудня — длятся 24 часа. Один оборот относительно звёзд Земля делает чуть быстрее, за 23 часа 56 минут: пока она поворачивается, она ещё и сдвигается по орбите вокруг Солнца.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Earth Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.atmosphere",
+    "worldId": "earth",
+    "label": "Атмосфера",
+    "display": "Азот и кислород",
+    "value": 78.08,
+    "unit": "% N2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Сухой воздух Земли — это 78% азота и 21% кислорода, плюс немного аргона и углекислого газа. Состав измеряют приборы прямо в воздухе на станциях по всему миру.",
+      "missionIds": [],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Earth Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.pressure",
+    "worldId": "earth",
+    "label": "Давление у поверхности",
+    "display": "1 атм",
+    "value": 1014,
+    "unit": "mbar",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Среднее давление воздуха на уровне моря — около 1014 миллибар, это и есть 1 атмосфера. Его измеряют барометрами на тысячах метеостанций.",
+      "missionIds": [],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Earth Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.life_water",
+    "worldId": "earth",
+    "label": "Жидкая вода и жизнь",
+    "display": "Единственное известное место",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Земля — единственная планета Солнечной системы с жидкой водой на поверхности и единственное известное место, где есть жизнь. Космические аппараты искали следы жизни и воды на других мирах, но пока жизнь нашли только здесь.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Earth: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/earth/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.record_low",
+    "worldId": "earth",
+    "label": "Самый сильный мороз на Земле",
+    "display": "−89,2 °C (Антарктида)",
+    "value": -89.2,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Самая низкая температура воздуха, когда-либо измеренная на Земле, — −89,2 °C на станции «Восток» в Антарктиде 21 июля 1983 года. Рекорд подтвердила Всемирная метеорологическая организация. Ночью на Меркурии ещё холоднее — около −180 °C.",
+      "missionIds": [],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1983
+    },
+    "source": {
+      "title": "Temperatures Across Our Solar System",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/solar-system/temperatures-across-our-solar-system/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.surface_temp",
+    "worldId": "moon",
+    "label": "Температура поверхности (день и ночь)",
+    "display": "от −173 до +127 °C",
+    "value": null,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "На солнце поверхность Луны нагревается примерно до +127 °C, а в темноте остывает до −173 °C: воздуха, который сглаживал бы перепады, нет. Подробную карту температур составил радиометр Diviner на зонде LRO — он измеряет тепловое излучение грунта.",
+      "missionIds": [
+        "lro"
+      ],
+      "methodIds": [
+        "ir_radiometry"
+      ],
+      "year": 2009
+    },
+    "source": {
+      "title": "Moon: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/moon/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.gravity",
+    "worldId": "moon",
+    "label": "Сила тяжести",
+    "display": "0,165 g",
+    "value": 0.165,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Сила тяжести на Луне — 1,62 м/с², примерно в шесть раз меньше земной. Поэтому и весишь там в шесть раз меньше, и прыгаешь выше. Самую точную карту лунной гравитации сделали в 2012 году два зонда GRAIL: они летели друг за другом, и по изменению расстояния между ними узнали, где притяжение сильнее.",
+      "missionIds": [
+        "grail",
+        "apollo"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": 2012
+    },
+    "source": {
+      "title": "Moon Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.day",
+    "worldId": "moon",
+    "label": "Солнечные сутки",
+    "display": "29,5 земных суток",
+    "value": 29.53,
+    "unit": "Earth days",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Луна всегда повёрнута к Земле одной стороной, поэтому день и ночь на ней сменяются раз в 29,5 земных суток — столько же длится цикл лунных фаз. Две недели — день, две недели — ночь.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Moon Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.atmosphere",
+    "worldId": "moon",
+    "label": "Атмосфера",
+    "display": "Почти нет (экзосфера)",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "У Луны нет воздуха, которым можно дышать, — только экзосфера: настолько редкие частицы газа, что они почти не сталкиваются друг с другом. Это показали приборы, оставленные астронавтами «Аполлонов», и наблюдения с орбиты.",
+      "missionIds": [
+        "apollo",
+        "lro"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1969
+    },
+    "source": {
+      "title": "Moon: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/moon/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.pressure",
+    "worldId": "moon",
+    "label": "Давление у поверхности",
+    "display": "≈0",
+    "value": 3e-15,
+    "unit": "bar",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Ночью давление газа у поверхности Луны — около трёх тысяч триллионных долей бара, это глубокий вакуум. Такие оценки дали приборы, которые астронавты «Аполлонов» оставили на Луне.",
+      "missionIds": [
+        "apollo"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1969
+    },
+    "source": {
+      "title": "Moon Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.moonwalkers",
+    "worldId": "moon",
+    "label": "Люди на Луне",
+    "display": "12 человек",
+    "value": 12,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "С 1969 по 1972 год по Луне прошли 12 американских астронавтов программы «Аполлон». Они привезли на Землю 382 кг лунных камней и грунта, которые изучают до сих пор.",
+      "missionIds": [
+        "apollo"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1969
+    },
+    "source": {
+      "title": "Moon Exploration",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/moon/exploration/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.footprints",
+    "worldId": "moon",
+    "label": "Следы астронавтов",
+    "display": "Сохранятся миллионы лет",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "На Луне нет ветра и дождя, которые стёрли бы следы. Поэтому отпечатки ботинок астронавтов, скорее всего, сохранятся миллионы лет — если в них случайно не попадёт метеорит.",
+      "missionIds": [
+        "apollo"
+      ],
+      "methodIds": [],
+      "year": 1969
+    },
+    "source": {
+      "title": "Apollo 11 — 25 years later",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.surface_temp",
+    "worldId": "mars",
+    "label": "Средняя температура",
+    "display": "в среднем −59 °C",
+    "value": -59,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Средняя температура Марса — около −59 °C, но днём на экваторе бывает около нуля и выше, а ночью — ниже −80 °C. Первые суточные замеры сделали посадочные аппараты «Викинг» в 1976 году; сейчас погоду меряют марсоходы, а температуру всей планеты — орбитальные аппараты по тепловому излучению.",
+      "missionIds": [
+        "viking1",
+        "viking2",
+        "curiosity"
+      ],
+      "methodIds": [
+        "in_situ",
+        "ir_radiometry"
+      ],
+      "year": 1976
+    },
+    "source": {
+      "title": "Mars Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.gravity",
+    "worldId": "mars",
+    "label": "Сила тяжести",
+    "display": "0,38 g",
+    "value": 0.38,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу Марса узнали по орбитам его спутников Фобоса и Деймоса и по движению космических аппаратов. Зная массу и радиус, вычисляют силу тяжести: 3,73 м/с², это 0,38 земной. Прыжок там получается примерно в 2,6 раза выше, чем на Земле.",
+      "missionIds": [
+        "viking1"
+      ],
+      "methodIds": [
+        "kepler_mass",
+        "radio_science"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Mars Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.day",
+    "worldId": "mars",
+    "label": "Солнечные сутки (сол)",
+    "display": "24 ч 40 мин",
+    "value": 24.6597,
+    "unit": "h",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Марсианские солнечные сутки — «сол» — длятся 24 часа 39,6 минуты, почти как земные. Вращение Марса измерили по наблюдениям его поверхности с Земли, а затем очень точно — по радиосигналам посадочных аппаратов.",
+      "missionIds": [
+        "viking1"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Mars Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.atmosphere",
+    "worldId": "mars",
+    "label": "Атмосфера",
+    "display": "Разрежённый углекислый газ",
+    "value": 95.1,
+    "unit": "% CO2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Атмосфера Марса на 95% состоит из углекислого газа, ещё есть немного азота и аргона. Её состав измерили приборы посадочных аппаратов «Викинг» в 1976 году, а позже — марсоход Curiosity.",
+      "missionIds": [
+        "viking1",
+        "viking2",
+        "curiosity"
+      ],
+      "methodIds": [
+        "in_situ",
+        "spectroscopy"
+      ],
+      "year": 1976
+    },
+    "source": {
+      "title": "Mars Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.pressure",
+    "worldId": "mars",
+    "label": "Давление у поверхности",
+    "display": "0,006 атм",
+    "value": 6.36,
+    "unit": "mbar",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Давление у поверхности Марса — около 6 миллибар, меньше одной сотой земного, и оно меняется со сменой сезонов от 4 до 8,7 миллибар. Первыми его измерили датчики посадочных аппаратов «Викинг-1» и «Викинг-2» в 1976 году.",
+      "missionIds": [
+        "viking1",
+        "viking2"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1976
+    },
+    "source": {
+      "title": "Mars Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.blue_sunset",
+    "worldId": "mars",
+    "label": "Закат на Марсе",
+    "display": "Голубой",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "15 апреля 2015 года марсоход Curiosity снял цветной закат в кратере Гейл — вокруг Солнца небо голубое. Мелкая марсианская пыль пропускает синий свет лучше, чем жёлтый и красный, и синий остаётся рядом с Солнцем. Голубое свечение заката ещё в 2005 году заснял марсоход Spirit.",
+      "missionIds": [
+        "curiosity",
+        "spirit"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 2015
+    },
+    "source": {
+      "title": "Sunset in Mars' Gale Crater",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/resource/sunset-in-mars-gale-crater/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.sky_color",
+    "worldId": "mars",
+    "label": "Цвет неба днём",
+    "display": "Розоватое от пыли",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Камни Марса содержат железо, которое ржавеет. Ржавая пыль поднимается в воздух, и днём небо Марса выглядит розоватым, а не голубым. Это видно на цветных снимках посадочных аппаратов и марсоходов, начиная с «Викингов» в 1976 году.",
+      "missionIds": [
+        "viking1",
+        "curiosity"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1976
+    },
+    "source": {
+      "title": "Mars in a Minute: Is Mars Really Red?",
+      "org": "NASA JPL Education",
+      "url": "https://www.jpl.nasa.gov/edu/resources/video/mars-in-a-minute-is-mars-really-red/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.dust_storms",
+    "worldId": "mars",
+    "label": "Пыльные бури",
+    "display": "Размером с континент",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Каждый марсианский год на Марсе поднимаются пыльные бури, которые накрывают области размером с континент и длятся неделями. Иногда они сливаются в глобальную бурю, закрывающую всю планету. Бури наблюдают орбитальные аппараты и марсоходы.",
+      "missionIds": [
+        "curiosity"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "The Fact and Fiction of Martian Dust Storms",
+      "org": "NASA",
+      "url": "https://www.nasa.gov/solar-system/the-fact-and-fiction-of-martian-dust-storms/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.surface_temp",
+    "worldId": "jupiter",
+    "label": "Температура на уровне давления 1 бар (верхние облака)",
+    "display": "−108 °C на уровне 1 бар",
+    "value": -108,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "У Юпитера нет твёрдой поверхности, поэтому температуру указывают там, где давление как на Земле у моря, — 1 бар, это уровень облаков. Там около −108 °C. В 1995 году зонд «Галилео» опустился в атмосферу на парашюте и измерял температуру и давление около часа.",
+      "missionIds": [
+        "galileo",
+        "juno"
+      ],
+      "methodIds": [
+        "in_situ",
+        "ir_radiometry"
+      ],
+      "year": 1995
+    },
+    "source": {
+      "title": "Jupiter Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.gravity",
+    "worldId": "jupiter",
+    "label": "Сила тяжести у верхних облаков (экватор, уровень 1 бар)",
+    "display": "2,53 g",
+    "value": 2.53,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу Юпитера узнают по орбитам его спутников и по движению зондов — Juno измеряет гравитацию по сдвигу частоты своего радиосигнала. Из массы и размера вычисляют притяжение: на экваторе на уровне облаков — 24,79 м/с², в 2,5 раза больше земного.",
+      "missionIds": [
+        "juno",
+        "galileo"
+      ],
+      "methodIds": [
+        "kepler_mass",
+        "radio_science"
+      ],
+      "year": 2016
+    },
+    "source": {
+      "title": "Planetary Physical Parameters",
+      "org": "NASA JPL Solar System Dynamics",
+      "url": "https://ssd.jpl.nasa.gov/planets/phys_par.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.day",
+    "worldId": "jupiter",
+    "label": "Сутки",
+    "display": "9 ч 56 мин",
+    "value": 9.9259,
+    "unit": "h",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Юпитер — самая быстро вращающаяся планета: сутки на нём длятся меньше 10 часов. Скорость вращения измерили по движению облаков и по радиоизлучению, которое крутится вместе с магнитным полем планеты.",
+      "missionIds": [
+        "juno"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Jupiter Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.atmosphere",
+    "worldId": "jupiter",
+    "label": "Атмосфера",
+    "display": "Водород и гелий",
+    "value": 89.8,
+    "unit": "% H2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Атмосфера Юпитера — это примерно 90% водорода и 10% гелия, почти как у Солнца. В 1995 году зонд «Галилео» вошёл в атмосферу и около часа передавал измерения её состава, пока не был раздавлен давлением. Juno, на орбите с 2016 года, изучает недра по гравитации.",
+      "missionIds": [
+        "galileo",
+        "juno"
+      ],
+      "methodIds": [
+        "in_situ",
+        "radio_science"
+      ],
+      "year": 1995
+    },
+    "source": {
+      "title": "Jupiter Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.pressure",
+    "worldId": "jupiter",
+    "label": "Давление в центре планеты (модель)",
+    "display": "в центре ≈ 44 млн атм",
+    "value": 44000000,
+    "unit": "atm",
+    "uncertainty": null,
+    "confidence": "model",
+    "howWeKnow": {
+      "summary": "Твёрдой поверхности нет, а давление растёт с глубиной. По моделям недр, в центре Юпитера на каждый квадратный сантиметр давит около 44 миллионов атмосфер. Модели проверяют по данным Juno о гравитационном поле планеты.",
+      "missionIds": [
+        "juno"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": 2016
+    },
+    "source": {
+      "title": "What's It Like Inside Jupiter?",
+      "org": "NASA Space Place",
+      "url": "https://spaceplace.nasa.gov/jupiter/en"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.great_red_spot",
+    "worldId": "jupiter",
+    "label": "Большое красное пятно",
+    "display": "Буря больше Земли",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Большое красное пятно — гигантский вихрь в атмосфере Юпитера, который больше всей Земли и бушует уже сотни лет. Его снимают с Земли и с космических аппаратов, в том числе с Juno.",
+      "missionIds": [
+        "juno",
+        "voyager1"
+      ],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Jupiter: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.no_surface",
+    "worldId": "jupiter",
+    "label": "Поверхность",
+    "display": "Твёрдой поверхности нет",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "model",
+    "howWeKnow": {
+      "summary": "Юпитер — газовый гигант: он состоит в основном из газов и жидкостей, и сесть на него некуда. Чем глубже, тем выше давление и температура — зонд, нырнувший слишком глубоко, раздавит и расплавит.",
+      "missionIds": [
+        "galileo",
+        "juno"
+      ],
+      "methodIds": [
+        "in_situ",
+        "radio_science"
+      ],
+      "year": 1995
+    },
+    "source": {
+      "title": "Jupiter: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.ammonia_clouds",
+    "worldId": "jupiter",
+    "label": "Облака",
+    "display": "Аммиачный лёд сверху",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Полосы Юпитера — это холодные облака из аммиака и воды. Верхний слой облаков, вероятно, состоит из аммиачного льда, под ним — гидросульфид аммония, а ещё глубже — водяной лёд и пар.",
+      "missionIds": [
+        "galileo",
+        "juno"
+      ],
+      "methodIds": [
+        "spectroscopy"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Jupiter: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.surface_temp",
+    "worldId": "titan",
+    "label": "Температура поверхности",
+    "display": "−179,5 °C",
+    "value": -179.5,
+    "unit": "°C",
+    "uncertainty": 0.25,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "14 января 2005 года европейский зонд «Гюйгенс» опустился на парашюте сквозь атмосферу Титана и сел на поверхность. Его датчики измерили у грунта −179,5 °C (93,65 К). Ещё в 1980 году «Вояджер-1» выяснил, что атмосфера Титана плотная, просветив её своим радиосигналом.",
+      "missionIds": [
+        "huygens",
+        "cassini",
+        "voyager1"
+      ],
+      "methodIds": [
+        "in_situ",
+        "radio_occultation"
+      ],
+      "year": 2005
+    },
+    "source": {
+      "title": "Fulchignoni et al. 2005, In situ measurements of the physical characteristics of Titan's environment, Nature 438",
+      "org": "Nature",
+      "url": "https://www.nature.com/articles/nature04314"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.gravity",
+    "worldId": "titan",
+    "label": "Сила тяжести",
+    "display": "0,14 g",
+    "value": 0.14,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу Титана точно измерили по тому, как он притягивал пролетавший мимо зонд «Кассини». Зная массу и радиус (2575 км), вычисляют силу тяжести: около 1,35 м/с², это 0,14 земной.",
+      "missionIds": [
+        "cassini"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Saturnian Satellite Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.day",
+    "worldId": "titan",
+    "label": "Сутки",
+    "display": "16 земных суток",
+    "value": 15.945,
+    "unit": "Earth days",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Титан всегда повёрнут к Сатурну одной стороной, поэтому один оборот вокруг оси он делает за то же время, что и оборот вокруг Сатурна, — почти 16 земных суток.",
+      "missionIds": [
+        "cassini"
+      ],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Saturnian Satellite Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.atmosphere",
+    "worldId": "titan",
+    "label": "Атмосфера",
+    "display": "Азот с метановой дымкой",
+    "value": 95,
+    "unit": "% N2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Атмосфера Титана примерно на 95% состоит из азота и на 5% из метана. Солнечный свет разбивает эти молекулы, и из обломков получается оранжевый смог, скрывающий поверхность. Состав измерил «Гюйгенс» во время спуска в 2005 году.",
+      "missionIds": [
+        "huygens",
+        "cassini",
+        "voyager1"
+      ],
+      "methodIds": [
+        "in_situ",
+        "spectroscopy"
+      ],
+      "year": 2005
+    },
+    "source": {
+      "title": "Titan: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.pressure",
+    "worldId": "titan",
+    "label": "Давление у поверхности",
+    "display": "1,5 бар",
+    "value": 1.467,
+    "unit": "bar",
+    "uncertainty": 0.001,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Зонд «Гюйгенс» измерил давление у поверхности Титана: 1467 гектопаскалей, это примерно в полтора раза больше, чем на Земле. Впервые плотную атмосферу Титана обнаружил «Вояджер-1» в 1980 году: его радиосигнал прошёл сквозь атмосферу, и по искажению сигнала рассчитали давление.",
+      "missionIds": [
+        "huygens",
+        "voyager1"
+      ],
+      "methodIds": [
+        "in_situ",
+        "radio_occultation"
+      ],
+      "year": 2005
+    },
+    "source": {
+      "title": "Fulchignoni et al. 2005, In situ measurements of the physical characteristics of Titan's environment, Nature 438",
+      "org": "Nature",
+      "url": "https://www.nature.com/articles/nature04314"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.only_moon_atmosphere",
+    "worldId": "titan",
+    "label": "Плотная атмосфера",
+    "display": "Единственный такой спутник",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "В Солнечной системе больше 150 спутников, но плотная атмосфера есть только у Титана. Давление у его поверхности примерно на 60% выше земного.",
+      "missionIds": [
+        "voyager1",
+        "cassini",
+        "huygens"
+      ],
+      "methodIds": [
+        "radio_occultation",
+        "in_situ"
+      ],
+      "year": 1980
+    },
+    "source": {
+      "title": "Titan: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.methane_rain",
+    "worldId": "titan",
+    "label": "Метановый дождь",
+    "display": "Капли до 9 мм, падают медленно",
+    "value": 9,
+    "unit": "mm",
+    "uncertainty": null,
+    "confidence": "model",
+    "howWeKnow": {
+      "summary": "На Титане идут дожди из жидкого метана. Расчёты показывают: капли там падают гораздо медленнее земных, потому что воздух плотнее, а притяжение слабее. А самые крупные капли — больше 9 мм, тогда как на Земле они не больше 6 мм.",
+      "missionIds": [
+        "cassini",
+        "huygens"
+      ],
+      "methodIds": [],
+      "year": 1995
+    },
+    "source": {
+      "title": "Lorenz 1995, Raindrops on Titan, Advances in Space Research 15(3)",
+      "org": "PubMed, NIH",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11539245/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "titan.seas",
+    "worldId": "titan",
+    "label": "Реки, озёра и моря",
+    "display": "Из жидкого метана и этана",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Титан — единственный мир, кроме Земли, где на поверхности есть жидкость: реки, озёра и моря из жидких метана и этана. Их нашёл радар зонда «Кассини» — он видит сквозь дымку, а гладкая жидкость выглядит на его снимках тёмной.",
+      "missionIds": [
+        "cassini"
+      ],
+      "methodIds": [
+        "radar"
+      ],
+      "year": 2006
+    },
+    "source": {
+      "title": "Titan: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/saturn/moons/titan/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.surface_temp",
+    "worldId": "europa",
+    "label": "Температура поверхности",
+    "display": "от −223 до −133 °C",
+    "value": null,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Поверхность Европы — от −133 °C в самых тёплых местах у экватора до −223 °C у полюсов. Карты температуры составил инфракрасный радиометр зонда «Галилео», который улавливал тепловое излучение льда.",
+      "missionIds": [
+        "galileo"
+      ],
+      "methodIds": [
+        "ir_radiometry"
+      ],
+      "year": 1997
+    },
+    "source": {
+      "title": "Europa Clipper Quick Facts",
+      "org": "NASA JPL",
+      "url": "https://www.jpl.nasa.gov/press-kits/europa-clipper/quick-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.gravity",
+    "worldId": "europa",
+    "label": "Сила тяжести",
+    "display": "0,134 g",
+    "value": 0.134,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу Европы измерили по тому, как она притягивала пролетавший мимо зонд «Галилео». Из массы и радиуса (1561 км) вычисляют силу тяжести: около 1,31 м/с², это 0,134 земной.",
+      "missionIds": [
+        "galileo"
+      ],
+      "methodIds": [
+        "radio_science"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Jovian Satellite Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.day",
+    "worldId": "europa",
+    "label": "Сутки",
+    "display": "3,6 земных суток",
+    "value": 3.551,
+    "unit": "Earth days",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Европа всегда повёрнута к Юпитеру одной стороной, поэтому её сутки равны её «году» вокруг Юпитера — 3,55 земных суток.",
+      "missionIds": [
+        "galileo"
+      ],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Jovian Satellite Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.atmosphere",
+    "worldId": "europa",
+    "label": "Атмосфера",
+    "display": "Следы кислорода",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "У Европы есть лишь крайне разрежённая атмосфера из кислорода. Её обнаружил космический телескоп «Хаббл» в 1994 году по ультрафиолетовому свечению атомов кислорода.",
+      "missionIds": [],
+      "methodIds": [
+        "spectroscopy"
+      ],
+      "year": 1995
+    },
+    "source": {
+      "title": "Europa: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.pressure",
+    "worldId": "europa",
+    "label": "Давление у поверхности",
+    "display": "≈0",
+    "value": 1e-11,
+    "unit": "atm",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Кислородная атмосфера Европы настолько редкая, что давление у поверхности — примерно стомиллиардная доля земного. Эту оценку получили по наблюдениям «Хаббла» в 1994 году.",
+      "missionIds": [],
+      "methodIds": [
+        "spectroscopy"
+      ],
+      "year": 1995
+    },
+    "source": {
+      "title": "Hall et al. 1995, Detection of an oxygen atmosphere on Jupiter's moon Europa, Nature 373",
+      "org": "Nature",
+      "url": "https://www.nature.com/articles/373677a0"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.ocean",
+    "worldId": "europa",
+    "label": "Океан подо льдом",
+    "display": "Вероятно, есть",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Зонд «Галилео» заметил, что Европа «отвечает» на магнитное поле Юпитера, как будто внутри неё есть слой, проводящий ток. Лучшее объяснение — глобальный океан солёной воды подо льдом. Проверять это будут Europa Clipper NASA и JUICE ЕКА.",
+      "missionIds": [
+        "galileo",
+        "europa_clipper",
+        "juice"
+      ],
+      "methodIds": [
+        "magnetic_induction"
+      ],
+      "year": 2000
+    },
+    "source": {
+      "title": "Europa: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.ocean_volume",
+    "worldId": "europa",
+    "label": "Сколько воды в океане",
+    "display": "Вдвое больше, чем на Земле",
+    "value": 2,
+    "unit": "× Earth's ocean",
+    "uncertainty": null,
+    "confidence": "model",
+    "howWeKnow": {
+      "summary": "Ледяная корка Европы толщиной, по оценкам, 15–25 км лежит на океане глубиной 60–150 км. Поэтому, хотя Европа вчетверо меньше Земли по диаметру, в её океане может быть вдвое больше воды, чем во всех земных океанах.",
+      "missionIds": [
+        "galileo"
+      ],
+      "methodIds": [
+        "magnetic_induction"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Europa: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.surface_temp",
+    "worldId": "pluto",
+    "label": "Средняя температура",
+    "display": "≈ −232 °C",
+    "value": -232,
+    "unit": "°C",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "В среднем на Плутоне около −232 °C. Температуру оценивают по тепловому излучению поверхности и по тому, какие льды там лежат, а в 2015 году данные уточнил зонд New Horizons, пролетевший мимо Плутона.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [
+        "ir_radiometry"
+      ],
+      "year": 2015
+    },
+    "source": {
+      "title": "Pluto: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.gravity",
+    "worldId": "pluto",
+    "label": "Сила тяжести",
+    "display": "0,063 g",
+    "value": 0.063,
+    "unit": "g",
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу Плутона узнали по орбите его большого спутника Харона: чем тяжелее планета, тем быстрее вокруг неё обращается спутник. А размер точно измерил New Horizons в 2015 году. Сила тяжести получается 0,62 м/с² — в 16 раз меньше земной.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [
+        "kepler_mass"
+      ],
+      "year": 2015
+    },
+    "source": {
+      "title": "Pluto Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.day",
+    "worldId": "pluto",
+    "label": "Сутки",
+    "display": "6,4 земных суток",
+    "value": 6.387,
+    "unit": "Earth days",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Плутон делает оборот вокруг оси за 6,4 земных суток — за столько же, за сколько Харон облетает его. Поэтому Плутон и Харон всегда смотрят друг на друга одной стороной.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Pluto Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.atmosphere",
+    "worldId": "pluto",
+    "label": "Атмосфера",
+    "display": "Тонкий азот",
+    "value": 99,
+    "unit": "% N2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Атмосфера Плутона очень тонкая и почти целиком из азота, с небольшой примесью метана и угарного газа. Её открыли в 1988 году, когда Плутон заслонил собой далёкую звезду: свет звезды гас не сразу, а постепенно — значит, его ослаблял газ. Состав уточнил New Horizons в 2015 году.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [
+        "occultation",
+        "spectroscopy"
+      ],
+      "year": 1988
+    },
+    "source": {
+      "title": "Pluto Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.pressure",
+    "worldId": "pluto",
+    "label": "Давление у поверхности",
+    "display": "≈0,00001 атм",
+    "value": 13,
+    "unit": "µbar",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Давление у поверхности Плутона — около 13 миллионных долей бара, примерно в 80 тысяч раз меньше земного. Его измерил New Horizons в 2015 году: зонд пролетел за Плутоном, и его радиосигнал прошёл сквозь атмосферу на пути к Земле.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [
+        "radio_occultation",
+        "occultation"
+      ],
+      "year": 2015
+    },
+    "source": {
+      "title": "Pluto Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.nitrogen_ice",
+    "worldId": "pluto",
+    "label": "Льды Плутона",
+    "display": "Равнины из азотного льда, горы из водяного",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "14 июля 2015 года New Horizons пролетел мимо Плутона и увидел «сердце» — равнину Спутника, ледник из азотного льда толщиной не меньше 4 км. Рядом стоят горы из водяного льда: при таком холоде он твёрд, как камень. Какие где льды, определили по спектрам — «отпечаткам» света разных веществ.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [
+        "spectroscopy"
+      ],
+      "year": 2015
+    },
+    "source": {
+      "title": "Five Years after New Horizons' Historic Flyby, Here Are 10 Cool Things We Learned About Pluto",
+      "org": "NASA",
+      "url": "https://www.nasa.gov/solar-system/five-years-after-new-horizons-historic-flyby-here-are-10-cool-things-we-learned-about-pluto/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.blue_haze",
+    "worldId": "pluto",
+    "label": "Цвет дымки",
+    "display": "Голубая",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Камера New Horizons сняла слои дымки над Плутоном, и они оказались голубыми. Дымку образуют крошечные частицы, похожие на сажу: солнечный свет запускает реакции азота и метана, и частицы растут, оседая к поверхности. Такие частицы сильнее рассеивают синий свет.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [],
+      "year": 2015
+    },
+    "source": {
+      "title": "Pluto's Blue Sky (PIA19964)",
+      "org": "NASA JPL",
+      "url": "https://www.jpl.nasa.gov/images/pia19964-plutos-blue-sky/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "pluto.sunlight",
+    "worldId": "pluto",
+    "label": "Солнце в небе Плутона",
+    "display": "В 900 раз тусклее, чем на Земле",
+    "value": 900,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Плутон в среднем в 39 раз дальше от Солнца, чем Земля. В полдень там светло примерно как у нас перед закатом: Солнце в 900 раз тусклее, чем на Земле, но всё равно в 300 раз ярче полной Луны.",
+      "missionIds": [
+        "new_horizons"
+      ],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Pluto: Facts",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/dwarf-planets/pluto/facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.surface_temp",
+    "worldId": "trappist",
+    "label": "Расчётная равновесная температура",
+    "display": "≈ −22 °C (оценка)",
+    "value": -22,
+    "unit": "°C",
+    "uncertainty": 5,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Температуру TRAPPIST-1e никто не измерял. −22 °C — это расчёт: сколько тепла планета получает от своей звезды на таком расстоянии, если у неё нет атмосферы и она поглощает весь свет. Настоящая температура зависит от атмосферы, о которой пока ничего не известно.",
+      "missionIds": [
+        "trappist_telescope",
+        "spitzer"
+      ],
+      "methodIds": [
+        "transit"
+      ],
+      "year": 2017
+    },
+    "source": {
+      "title": "TRAPPIST-1 e — Overview",
+      "org": "NASA Exoplanet Archive",
+      "url": "https://exoplanetarchive.ipac.caltech.edu/overview/TRAPPIST-1%20e"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.gravity",
+    "worldId": "trappist",
+    "label": "Сила тяжести",
+    "display": "0,82 g",
+    "value": 0.82,
+    "unit": "g",
+    "uncertainty": 0.024,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Массу TRAPPIST-1e узнали по тому, как планеты системы чуть-чуть сдвигают друг другу моменты прохождения перед звездой, а радиус — по глубине провала яркости звезды. Из массы и радиуса вычисляют притяжение: 0,82 земного.",
+      "missionIds": [
+        "spitzer",
+        "trappist_telescope"
+      ],
+      "methodIds": [
+        "ttv",
+        "transit"
+      ],
+      "year": 2021
+    },
+    "source": {
+      "title": "Agol et al. 2021, Refining the transit-timing and photometric analysis of TRAPPIST-1, Planetary Science Journal 2:1",
+      "org": "arXiv / PSJ",
+      "url": "https://arxiv.org/abs/2010.01074"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.day",
+    "worldId": "trappist",
+    "label": "Сутки",
+    "display": "Всегда одной стороной к звезде",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "model",
+    "howWeKnow": {
+      "summary": "TRAPPIST-1e обходит свою звезду за 6,1 земных суток очень близко к ней. Учёные считают, что, как и Луна к Земле, планета всегда повёрнута к звезде одной стороной: на одной половине вечный день, на другой — вечная ночь. Это вывод теории, а не наблюдение.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "NASA Webb Looks at Earth-Sized, Habitable-Zone Exoplanet TRAPPIST-1 e",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-looks-at-earth-sized-habitable-zone-exoplanet-trappist-1-e/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.atmosphere",
+    "worldId": "trappist",
+    "label": "Атмосфера",
+    "display": "Неизвестно",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "unknown",
+    "howWeKnow": {
+      "summary": "Есть ли у TRAPPIST-1e атмосфера, пока никто не знает. Телескоп «Джеймс Уэбб» ловит свет звезды, прошедший сквозь край планеты: газы оставили бы в нём свои «отпечатки». После первых четырёх прохождений ясно, что изначальной водородной атмосферы нет, а других ответов пока нет — идут ещё 15 наблюдений.",
+      "missionIds": [
+        "jwst"
+      ],
+      "methodIds": [
+        "transit",
+        "spectroscopy"
+      ],
+      "year": 2025
+    },
+    "source": {
+      "title": "NASA Webb Looks at Earth-Sized, Habitable-Zone Exoplanet TRAPPIST-1 e",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-looks-at-earth-sized-habitable-zone-exoplanet-trappist-1-e/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.pressure",
+    "worldId": "trappist",
+    "label": "Давление у поверхности",
+    "display": "Неизвестно",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "unknown",
+    "howWeKnow": {
+      "summary": "Давление у поверхности неизвестно, потому что неизвестно даже, есть ли у планеты атмосфера. «Джеймс Уэбб» продолжает наблюдать прохождения TRAPPIST-1e перед звездой, чтобы это выяснить.",
+      "missionIds": [
+        "jwst"
+      ],
+      "methodIds": [
+        "transit",
+        "spectroscopy"
+      ],
+      "year": 2025
+    },
+    "source": {
+      "title": "NASA Webb Looks at Earth-Sized, Habitable-Zone Exoplanet TRAPPIST-1 e",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-looks-at-earth-sized-habitable-zone-exoplanet-trappist-1-e/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.radius",
+    "worldId": "trappist",
+    "label": "Радиус",
+    "display": "0,92 радиуса Земли",
+    "value": 0.92,
+    "unit": "R_earth",
+    "uncertainty": 0.013,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Когда планета проходит перед звездой, звезда чуть тускнеет. По глубине этого провала узнают размер планеты. Так TRAPPIST-1e нашли телескоп TRAPPIST и космический телескоп «Спитцер» в 2016–2017 годах; уточнённый радиус — 0,92 земного.",
+      "missionIds": [
+        "trappist_telescope",
+        "spitzer"
+      ],
+      "methodIds": [
+        "transit"
+      ],
+      "year": 2017
+    },
+    "source": {
+      "title": "Agol et al. 2021, Refining the transit-timing and photometric analysis of TRAPPIST-1, Planetary Science Journal 2:1",
+      "org": "arXiv / PSJ",
+      "url": "https://arxiv.org/abs/2010.01074"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.mass",
+    "worldId": "trappist",
+    "label": "Масса",
+    "display": "0,69 массы Земли",
+    "value": 0.692,
+    "unit": "M_earth",
+    "uncertainty": 0.022,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Планеты TRAPPIST-1 притягивают друг друга и чуть сдвигают моменты своих прохождений перед звездой — на минуты. По этим сдвигам вычислили массы всех семи планет. Масса TRAPPIST-1e — 0,69 земной.",
+      "missionIds": [
+        "spitzer",
+        "trappist_telescope"
+      ],
+      "methodIds": [
+        "ttv"
+      ],
+      "year": 2021
+    },
+    "source": {
+      "title": "Agol et al. 2021, Refining the transit-timing and photometric analysis of TRAPPIST-1, Planetary Science Journal 2:1",
+      "org": "arXiv / PSJ",
+      "url": "https://arxiv.org/abs/2010.01074"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.distance",
+    "worldId": "trappist",
+    "label": "Расстояние от Земли",
+    "display": "40 световых лет",
+    "value": 40,
+    "unit": "light years",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Система TRAPPIST-1 находится примерно в 40 световых годах от нас: свет от её звезды летит к Земле 40 лет. Расстояние измеряют по тому, как звезда немного смещается на небе, пока Земля обходит Солнце.",
+      "missionIds": [
+        "jwst"
+      ],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "NASA Webb Looks at Earth-Sized, Habitable-Zone Exoplanet TRAPPIST-1 e",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-looks-at-earth-sized-habitable-zone-exoplanet-trappist-1-e/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.habitable_zone",
+    "worldId": "trappist",
+    "label": "Зона обитаемости",
+    "display": "Вода на поверхности возможна",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "model",
+    "howWeKnow": {
+      "summary": "TRAPPIST-1e обращается на таком расстоянии от звезды, где на поверхности теоретически может быть жидкая вода — не слишком жарко и не слишком холодно. Но только если у планеты есть атмосфера. Поэтому она — одна из главных целей телескопа «Джеймс Уэбб».",
+      "missionIds": [
+        "jwst"
+      ],
+      "methodIds": [
+        "transit"
+      ],
+      "year": 2025
+    },
+    "source": {
+      "title": "NASA Webb Looks at Earth-Sized, Habitable-Zone Exoplanet TRAPPIST-1 e",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-looks-at-earth-sized-habitable-zone-exoplanet-trappist-1-e/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  }
+]
