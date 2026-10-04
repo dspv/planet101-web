@@ -111,10 +111,12 @@ export type Live = {
 };
 
 const ROOT = process.cwd();
+/** Override only to test a build against partial content (e.g. a dir holding just worlds.json). */
+const CONTENT_DIR = process.env.PLANETWALK_CONTENT_DIR || path.join(ROOT, "content");
 
 function read<T>(file: string, fallback: T): T {
   try {
-    const raw = fs.readFileSync(path.join(ROOT, "content", file), "utf8");
+    const raw = fs.readFileSync(path.join(CONTENT_DIR, file), "utf8");
     return JSON.parse(raw) as T;
   } catch {
     return fallback;
@@ -184,4 +186,14 @@ export function mediaFor(m: Mission): Media | undefined {
     if (item && mediaFileExists(item.file)) return item;
   }
   return undefined;
+}
+
+/**
+ * Static params for a dynamic route. `output: "export"` refuses an empty list,
+ * so while a content file is missing the route gets one placeholder id that
+ * renders the 404 page; it is never linked and never in the sitemap.
+ */
+export const EMPTY_ID = "none";
+export function staticParams(ids: string[]) {
+  return (ids.length ? ids : [EMPTY_ID]).map((id) => ({ id }));
 }

@@ -3,14 +3,14 @@ import { notFound } from "next/navigation";
 import { Band } from "@/components/Blocks";
 import { FactCard } from "@/components/Facts";
 import WorldScape from "@/components/WorldScape";
-import { factsOf, gravityOf, live, missions, worlds } from "@/lib/content";
+import { factsOf, gravityOf, live, missions, staticParams, worlds } from "@/lib/content";
 import { STATUS, date, gravityLine, lightTime, num } from "@/lib/format";
 import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return worlds().map((w) => ({ id: w.id }));
+  return staticParams(worlds().map((w) => w.id));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
@@ -55,8 +55,8 @@ export default async function WorldPage({ params }: { params: Promise<{ id: stri
           {g !== null && <p className="fig mt-6 text-[1.05rem] text-accent">{gravityLine(g, w.gas)}</p>}
           {dist && (
             <p className="mt-4 text-ink-mute">
-              Сейчас до Земли <span className="fig text-ink">{num(dist.au, dist.au < 0.1 ? 4 : 2)} а. е.</span>, свет идёт{" "}
-              <span className="fig text-ink">{lightTime(dist.lightSeconds)}</span>.
+              Сейчас до Земли <span className="fig whitespace-nowrap text-ink">{num(dist.au, dist.au < 0.1 ? 4 : 2)} а. е.</span>, свет идёт{" "}
+              <span className="fig whitespace-nowrap text-ink">{lightTime(dist.lightSeconds)}</span>.
               <span className="t-small block">JPL Horizons, данные на {date(dist.fetchedAt)}</span>
             </p>
           )}

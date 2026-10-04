@@ -7,14 +7,14 @@ import WorldScape from "./WorldScape";
 export default function WorldGrid({ worlds }: { worlds: World[] }) {
   return (
     <>
-      <ul className="mt-10 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      <ul className="mt-10 grid list-none grid-cols-2 gap-3 p-0 sm:gap-4 lg:grid-cols-3 xl:grid-cols-5">
         {worlds.map((w, i) => {
           const g = gravityOf(w.id);
           return (
-            <li key={w.id}>
-              <a href={`/worlds/${w.id}/`} className="group block overflow-hidden rounded-[18px] border border-line bg-card transition-colors hover:border-accent">
+            <li key={w.id} className="h-full">
+              <a href={`/worlds/${w.id}/`} className="group block h-full overflow-hidden rounded-[18px] border border-line bg-card transition-colors hover:border-accent">
                 <WorldScape w={w} index={i} className="block aspect-[16/10] w-full" />
-                <div className="p-4">
+                <div className="p-3 sm:p-4">
                   <p className="text-[1.15rem] font-semibold leading-snug text-ink group-hover:text-accent">{w.name}</p>
                   <p className="mt-1 text-[0.95rem] leading-snug text-ink-mute">{w.kind}</p>
                   {g !== null && <p className="fig mt-2 text-[0.9rem] text-ink-dim">{gravityShort(g, w.gas)}</p>}

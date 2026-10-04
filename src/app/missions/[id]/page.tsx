@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Band } from "@/components/Blocks";
-import { facts, mediaFor, methods, mission, missions, worlds } from "@/lib/content";
+import { facts, mediaFor, methods, mission, missions, staticParams, worlds } from "@/lib/content";
 import { LICENSE, MISSION_TYPE, STATUS, date } from "@/lib/format";
 import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return missions().map((m) => ({ id: m.id }));
+  return staticParams(missions().map((m) => m.id));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {

@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import KeplerDemo from "@/components/KeplerDemo";
 import TransitDemo from "@/components/TransitDemo";
-import { facts, method, methods, mission, worlds } from "@/lib/content";
+import { facts, method, methods, mission, staticParams, worlds } from "@/lib/content";
 import { SITE } from "@/lib/site";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return methods().map((m) => ({ id: m.id }));
+  return staticParams(methods().map((m) => m.id));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {

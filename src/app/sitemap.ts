@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
   const mission = ms.map((m) => ({ url: `${SITE}/missions/${m.id}/`, lastModified: m.statusCheckedAt }));
   const method = methods().map((m) => ({ url: `${SITE}/methods/${m.id}/` }));
-  return [
+  const entries: { url: string; lastModified?: string }[] = [
     { url: `${SITE}/`, lastModified: newest(fs.map((f) => f.lastVerified)) },
     { url: `${SITE}/worlds/` },
     ...world,
@@ -30,5 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...method,
     { url: `${SITE}/about/` },
     { url: `${SITE}/privacy/` },
-  ].map((e) => (e.lastModified ? e : { url: e.url }));
+  ];
+  return entries.map((e) => (e.lastModified ? e : { url: e.url }));
 }
