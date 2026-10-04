@@ -584,6 +584,146 @@
     "verifiedBy": "agent"
   },
   {
+    "id": "earth.oxygen",
+    "worldId": "earth",
+    "label": "Кислород в воздухе",
+    "display": "20,95 %",
+    "value": 20.95,
+    "unit": "% O2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "В сухом воздухе Земли 20,95% кислорода — именно его забирают из воздуха наши лёгкие. Состав воздуха измеряют приборы на станциях по всему миру.",
+      "missionIds": [],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": null
+    },
+    "source": {
+      "title": "Earth Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.body_boiling_pressure",
+    "worldId": "earth",
+    "label": "Давление, при котором вода в теле закипает",
+    "display": "6,3 кПа (47 мм рт. ст.)",
+    "value": 6.27,
+    "unit": "kPa",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "При температуре тела, +37 °C, вода закипает, если давление вокруг ниже 47 миллиметров ртутного столба — это около 6,3 килопаскаля. Тогда жидкости в тканях начинают превращаться в пар, и тело разбухает; врачи называют это эбуллизмом. NASA собрало эти данные в справочнике для конструкторов скафандров и кораблей.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": 1973
+    },
+    "source": {
+      "title": "Bioastronautics Data Book, 2nd ed. (NASA SP-3006), ch. 1 Barometric Pressure, ch. 2 Atmosphere",
+      "org": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/19730006364"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.vacuum_consciousness",
+    "worldId": "earth",
+    "label": "Сознание в вакууме без скафандра",
+    "display": "9–11 секунд",
+    "value": null,
+    "unit": "s",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Столько, скорее всего, человек остаётся в сознании, если внезапно оказаться в вакууме без скафандра. Это оценка по опытам с собаками, обезьянами и шимпанзе, которых за пару секунд переводили почти в полный вакуум. Помочь себе человек успеет за ещё меньшее время — за 5–10 секунд.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": 1973
+    },
+    "source": {
+      "title": "Bioastronautics Data Book, 2nd ed. (NASA SP-3006), ch. 1 Barometric Pressure, ch. 2 Atmosphere",
+      "org": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/19730006364"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.vacuum_rescue",
+    "worldId": "earth",
+    "label": "Когда ещё можно спасти",
+    "display": "60–90 секунд",
+    "value": null,
+    "unit": "s",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Если за 60–90 секунд вернуть давление, человек, вероятно, выживет и может быстро прийти в себя, хотя гарантий нет. В опытах с животными выживание было правилом, если давление возвращали примерно за 90 секунд, а после остановки сердца спасти уже не удавалось. Без скафандра тело в вакууме раздувается, возможно, вдвое.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": 1973
+    },
+    "source": {
+      "title": "Bioastronautics Data Book, 2nd ed. (NASA SP-3006), ch. 1 Barometric Pressure, ch. 2 Atmosphere",
+      "org": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/19730006364"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.anoxia_fatal",
+    "worldId": "earth",
+    "label": "Совсем без кислорода",
+    "display": "90–180 секунд",
+    "value": null,
+    "unit": "s",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Когда кислорода нет совсем, человек почти сразу теряет сознание, начинаются судороги и паралич. Если это длится дольше 90–180 секунд, исход почти всегда смертельный. Это данные авиационной и космической медицины, собранные NASA.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": 1973
+    },
+    "source": {
+      "title": "Bioastronautics Data Book, 2nd ed. (NASA SP-3006), ch. 1 Barometric Pressure, ch. 2 Atmosphere",
+      "org": "NASA",
+      "url": "https://ntrs.nasa.gov/citations/19730006364"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "earth.radiation_dose",
+    "worldId": "earth",
+    "label": "Радиация на Земле",
+    "display": "≈6,2 мЗв в год",
+    "value": 6.2,
+    "unit": "mSv/yr",
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Столько радиации в среднем получает за год житель США — от природных источников вроде горных пород и от медицинских снимков. Это оценка Национального совета по радиационной защите США. Миллизиверт (мЗв) — единица, которая показывает, насколько полученная радиация опасна для тела.",
+      "missionIds": [],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Radiation Sources and Doses",
+      "org": "U.S. EPA",
+      "url": "https://www.epa.gov/radiation/radiation-sources-and-doses"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
     "id": "moon.surface_temp",
     "worldId": "moon",
     "label": "Температура поверхности (день и ночь)",
@@ -764,6 +904,31 @@
       "title": "Apollo 11 — 25 years later",
       "org": "NASA NSSDCA",
       "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo11.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "moon.radiation",
+    "worldId": "moon",
+    "label": "Радиация на поверхности",
+    "display": "≈1,4 мЗв в сутки",
+    "value": 1.369,
+    "unit": "mSv/day",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Первые измерения радиации прямо на поверхности Луны сделал прибор LND на китайском посадочном аппарате «Чанъэ-4» в 2019 году: в среднем 1369 микрозивертов, то есть около 1,4 миллизиверта, в сутки. Это почти вдвое больше, чем в те же дни на МКС, — 731 микрозиверт в сутки. Во время сильной солнечной вспышки без хорошей защиты доза может вырасти во много раз.",
+      "missionIds": [],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 2019
+    },
+    "source": {
+      "title": "Zhang et al. 2020, First measurements of the radiation dose on the lunar surface, Science Advances 6",
+      "org": "Science Advances (PMC)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7518862/"
     },
     "lastVerified": "2026-10-04",
     "verifiedBy": "agent"
@@ -995,6 +1160,62 @@
     "verifiedBy": "agent"
   },
   {
+    "id": "mars.oxygen",
+    "worldId": "mars",
+    "label": "Кислород в воздухе",
+    "display": "0,16 %",
+    "value": 0.16,
+    "unit": "% O2",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "В атмосфере Марса всего 0,16% кислорода, а сама атмосфера очень разрежённая. Почти всё остальное — углекислый газ. Состав измеряли приборы посадочных аппаратов и марсоходов прямо у поверхности.",
+      "missionIds": [
+        "viking1",
+        "viking2",
+        "curiosity"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1976
+    },
+    "source": {
+      "title": "Mars Fact Sheet",
+      "org": "NASA NSSDCA",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "mars.radiation",
+    "worldId": "mars",
+    "label": "Радиация на поверхности",
+    "display": "≈0,67 мЗв в сутки",
+    "value": 0.67,
+    "unit": "mSv/day",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "Прибор RAD на марсоходе Curiosity с августа 2012 по июнь 2013 года измерял радиацию прямо на поверхности Марса: в среднем 0,67 миллизиверта в сутки от космических лучей. В полёте к Марсу внутри корабля было больше — 1,8 миллизиверта в сутки.",
+      "missionIds": [
+        "curiosity"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 2013
+    },
+    "source": {
+      "title": "SwRI scientists publish first radiation measurements from the surface of Mars",
+      "org": "Southwest Research Institute",
+      "url": "https://www.swri.org/newsroom/press-releases/swri-scientists-publish-first-radiation-measurements-the-surface-of-mars"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
     "id": "jupiter.surface_temp",
     "worldId": "jupiter",
     "label": "Температура на уровне давления 1 бар (верхние облака)",
@@ -1214,6 +1435,33 @@
       "title": "Jupiter: Facts",
       "org": "NASA Science",
       "url": "https://science.nasa.gov/jupiter/jupiter-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "jupiter.probe_depth",
+    "worldId": "jupiter",
+    "label": "Где замолчал зонд",
+    "display": "22 бар, +156 °C",
+    "value": 22,
+    "unit": "bar",
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "В 1995 году зонд «Галилео» спускался на парашюте в атмосферу Юпитера и передавал данные. Он опустился на 133 километра ниже уровня, где давление 1 бар, и последние измерения показали 22 бара и 429 кельвинов — около +156 °C. Встать там не на что: вокруг только всё более плотный и горячий газ.",
+      "missionIds": [
+        "galileo"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 1995
+    },
+    "source": {
+      "title": "Seiff et al. 1998, Thermal structure of Jupiter's atmosphere near the edge of a 5-μm hot spot in the north equatorial belt, JGR Planets 103",
+      "org": "Journal of Geophysical Research",
+      "url": "https://doi.org/10.1029/98JE01766"
     },
     "lastVerified": "2026-10-04",
     "verifiedBy": "agent"
@@ -1443,6 +1691,33 @@
     "verifiedBy": "agent"
   },
   {
+    "id": "titan.no_pressure_suit",
+    "worldId": "titan",
+    "label": "Скафандр, держащий давление",
+    "display": "Не нужен — но нужны кислород и тепло",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "derived",
+    "howWeKnow": {
+      "summary": "Азотная атмосфера Титана такая плотная, что человек мог бы ходить там без скафандра, который держит давление: у поверхности оно даже выше земного. Но там очень холодно и нет кислорода, так что без дыхательного аппарата и сильного утепления не выжить. Давление и температуру у поверхности измерил зонд «Гюйгенс» в 2005 году.",
+      "missionIds": [
+        "huygens"
+      ],
+      "methodIds": [
+        "in_situ"
+      ],
+      "year": 2005
+    },
+    "source": {
+      "title": "Ocean Worlds — Space",
+      "org": "NASA Ocean Biology and Biogeochemistry Program",
+      "url": "https://cce.nasa.gov/ocean_biology_biogeochemistry/ocean_worlds/ow_space.html"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
     "id": "europa.surface_temp",
     "worldId": "europa",
     "label": "Температура поверхности",
@@ -1623,6 +1898,32 @@
       "title": "Europa: Facts",
       "org": "NASA Science",
       "url": "https://science.nasa.gov/jupiter/jupiter-moons/europa/europa-facts/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "europa.radiation",
+    "worldId": "europa",
+    "label": "Радиация",
+    "display": "Смертельная доза за часы",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "estimated",
+    "howWeKnow": {
+      "summary": "Европа обращается внутри радиационных поясов Юпитера — они гораздо мощнее земных. По оценке ЕКА, астронавт на поверхности Европы получил бы смертельную дозу радиации за считаные часы. Оценка основана на модели, собранной по данным «Пионеров», «Вояджеров», «Кассини» и особенно «Галилео»; поэтому зонд JUICE пролетит мимо Европы лишь дважды.",
+      "missionIds": [
+        "galileo",
+        "juice"
+      ],
+      "methodIds": [],
+      "year": null
+    },
+    "source": {
+      "title": "Jupiter's radiation belts – and how to survive them",
+      "org": "ESA",
+      "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Jupiter_s_radiation_belts_and_how_to_survive_them"
     },
     "lastVerified": "2026-10-04",
     "verifiedBy": "agent"
@@ -2073,6 +2374,31 @@
       "methodIds": [
         "transit"
       ],
+      "year": 2025
+    },
+    "source": {
+      "title": "NASA Webb Looks at Earth-Sized, Habitable-Zone Exoplanet TRAPPIST-1 e",
+      "org": "NASA Science",
+      "url": "https://science.nasa.gov/missions/webb/nasa-webb-looks-at-earth-sized-habitable-zone-exoplanet-trappist-1-e/"
+    },
+    "lastVerified": "2026-10-04",
+    "verifiedBy": "agent"
+  },
+  {
+    "id": "trappist.star_flares",
+    "worldId": "trappist",
+    "label": "Звезда",
+    "display": "Очень активная, частые вспышки",
+    "value": null,
+    "unit": null,
+    "uncertainty": null,
+    "confidence": "measured",
+    "howWeKnow": {
+      "summary": "TRAPPIST-1 — красный карлик, очень активная звезда с частыми вспышками. Её излучение, по мнению учёных, сорвало с планеты первоначальную водородно-гелиевую атмосферу. Сколько радиации доходит до поверхности TRAPPIST-1e сейчас, неизвестно: это зависит от атмосферы, которой может и не быть.",
+      "missionIds": [
+        "jwst"
+      ],
+      "methodIds": [],
       "year": 2025
     },
     "source": {

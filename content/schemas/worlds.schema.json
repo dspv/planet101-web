@@ -45,6 +45,37 @@
           "url": { "$ref": "common.schema.json#/$defs/url" },
           "caption": { "$ref": "common.schema.json#/$defs/text" }
         }
+      },
+      "survival": {
+        "description": "Optional «Выживешь?» data: what would kill an unprotected human here. Every number in helmetOff.text must appear in the display of a fact in helmetOff.factIds (validate.py).",
+        "type": "object",
+        "required": ["threats", "helmetOff"],
+        "additionalProperties": false,
+        "properties": {
+          "threats": { "description": "Ordered by what kills first.", "type": "array", "items": { "$ref": "#/$defs/hazard" } },
+          "safe": { "description": "Conditions that would not harm an unprotected human.", "type": "array", "items": { "$ref": "#/$defs/hazard" } },
+          "helmetOff": {
+            "type": "object",
+            "required": ["text", "factIds"],
+            "additionalProperties": false,
+            "properties": {
+              "text": { "type": "string", "minLength": 1, "maxLength": 240 },
+              "factIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/factId" } }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "factId": { "type": "string", "pattern": "^[a-z0-9_]+\\.[a-z0-9_]+$" },
+    "hazard": {
+      "type": "object",
+      "required": ["kind", "factIds"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["vacuum", "crush", "heat", "cold", "no_oxygen", "radiation", "no_surface", "air", "pressure", "unknown"] },
+        "factIds": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/factId" } }
       }
     }
   }

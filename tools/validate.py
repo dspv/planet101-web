@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 import sys
 import time
 from collections import Counter, defaultdict
@@ -188,6 +189,36 @@ def check_sheet_facts(rep: Report, data: dict) -> None:
                 rep.error(f"facts.json [id={wid}.gravity] value {v!r} != worlds.json g {g!r} — scene physics and displayed figure would drift")
 
 
+NUMBER = re.compile(r"\d+(?:[.,]\d+)?")
+
+
+def check_survival(rep: Report, data: dict) -> None:
+    """worlds.json `survival` (optional): every fact id resolves, and every number
+    in helmetOff.text appears in the display of one of helmetOff.factIds — the
+    one-liner may not carry a figure that no sourced fact backs."""
+    facts = {f.get("id"): f for f in records(data, "facts")}
+    for w in records(data, "worlds"):
+        surv = w.get("survival")
+        if not isinstance(surv, dict):
+            continue
+        wid = w.get("id", "?")
+        groups = [("threats", h) for h in surv.get("threats") or []] + [("safe", h) for h in surv.get("safe") or []]
+        helmet = surv.get("helmetOff") or {}
+        refs = [(f"survival.{g}.factIds", fid) for g, h in groups if isinstance(h, dict) for fid in h.get("factIds") or []]
+        refs += [("survival.helmetOff.factIds", fid) for fid in helmet.get("factIds") or []]
+        for field, fid in refs:
+            if fid not in facts:
+                rep.error(f"worlds.json [id={wid}] {field}: '{fid}' not found in facts.json")
+        text = helmet.get("text")
+        if isinstance(text, str):
+            allowed = set()
+            for fid in helmet.get("factIds") or []:
+                allowed |= set(NUMBER.findall((facts.get(fid) or {}).get("display") or ""))
+            for n in NUMBER.findall(text):
+                if n not in allowed:
+                    rep.error(f"worlds.json [id={wid}] survival.helmetOff.text: number '{n}' is not in the display of any of its factIds — no source, no figure")
+
+
 def check_fact_sources(rep: Report, data: dict) -> None:
     for f in records(data, "facts"):
         rid = f.get("id", "?")
@@ -297,6 +328,7 @@ def run(links: bool = False, today: date | None = None, quiet: bool = False) -> 
     check_refs(rep, data, ids)
     if "facts" in present:  # a missing facts.json is already one error; skip 50 follow-ups
         check_sheet_facts(rep, data)
+        check_survival(rep, data)
     check_fact_sources(rep, data)
     check_staleness(rep, data, today)
     check_media_files(rep, data)
