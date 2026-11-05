@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-11-04T10:10:04Z",
+  "generatedAt": "2026-11-05T10:03:49Z",
   "exoplanetCount": {
     "value": 6451,
-    "fetchedAt": "2026-11-04T10:10:06Z"
+    "fetchedAt": "2026-11-05T10:03:50Z"
   },
   "distances": {
     "europa": {
-      "au": 5.45157899,
-      "lightSeconds": 2720.365,
-      "fetchedAt": "2026-11-04T10:10:11Z"
+      "au": 5.43329692,
+      "lightSeconds": 2711.242,
+      "fetchedAt": "2026-11-05T10:03:55Z"
     },
     "jupiter": {
-      "au": 5.44755267,
-      "lightSeconds": 2718.356,
-      "fetchedAt": "2026-11-04T10:10:11Z"
+      "au": 5.43227949,
+      "lightSeconds": 2710.735,
+      "fetchedAt": "2026-11-05T10:03:54Z"
     },
     "mars": {
-      "au": 1.40453133,
-      "lightSeconds": 700.868,
-      "fetchedAt": "2026-11-04T10:10:10Z"
+      "au": 1.39632525,
+      "lightSeconds": 696.773,
+      "fetchedAt": "2026-11-05T10:03:54Z"
     },
     "mercury": {
-      "au": 0.67363808,
-      "lightSeconds": 336.149,
-      "fetchedAt": "2026-11-04T10:10:07Z"
+      "au": 0.67765208,
+      "lightSeconds": 338.152,
+      "fetchedAt": "2026-11-05T10:03:51Z"
     },
     "moon": {
-      "au": 0.00255025,
-      "lightSeconds": 1.273,
-      "fetchedAt": "2026-11-04T10:10:09Z"
+      "au": 0.00257366,
+      "lightSeconds": 1.284,
+      "fetchedAt": "2026-11-05T10:03:53Z"
     },
     "pluto": {
-      "au": 35.77272031,
-      "lightSeconds": 17850.766,
-      "fetchedAt": "2026-11-04T10:10:13Z"
+      "au": 35.79028329,
+      "lightSeconds": 17859.53,
+      "fetchedAt": "2026-11-05T10:03:57Z"
     },
     "titan": {
-      "au": 8.5793576,
-      "lightSeconds": 4281.142,
-      "fetchedAt": "2026-11-04T10:10:12Z"
+      "au": 8.58531548,
+      "lightSeconds": 4284.115,
+      "fetchedAt": "2026-11-05T10:03:56Z"
     },
     "venus": {
-      "au": 0.28810939,
-      "lightSeconds": 143.768,
-      "fetchedAt": "2026-11-04T10:10:08Z"
+      "au": 0.29108543,
+      "lightSeconds": 145.253,
+      "fetchedAt": "2026-11-05T10:03:52Z"
     }
   },
   "trappist1e": {
@@ -51,6 +51,6 @@
     "massEarth": 0.692,
     "eqTempK": 249.7,
     "periodDays": 6.101013,
-    "fetchedAt": "2026-11-04T10:10:07Z"
+    "fetchedAt": "2026-11-05T10:03:51Z"
   }
 }
