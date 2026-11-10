@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-11-09T10:38:23Z",
+  "generatedAt": "2026-11-10T10:37:20Z",
   "exoplanetCount": {
     "value": 6464,
     "fetchedAt": "2026-11-09T10:38:24Z"
   },
   "distances": {
     "europa": {
-      "au": 5.36746428,
-      "lightSeconds": 2678.392,
-      "fetchedAt": "2026-11-09T10:38:29Z"
+      "au": 5.35123435,
+      "lightSeconds": 2670.293,
+      "fetchedAt": "2026-11-10T10:37:28Z"
     },
     "jupiter": {
-      "au": 5.37001952,
-      "lightSeconds": 2679.667,
-      "fetchedAt": "2026-11-09T10:38:28Z"
+      "au": 5.35445671,
+      "lightSeconds": 2671.901,
+      "fetchedAt": "2026-11-10T10:37:28Z"
     },
     "mars": {
-      "au": 1.36282855,
-      "lightSeconds": 680.058,
-      "fetchedAt": "2026-11-09T10:38:28Z"
+      "au": 1.35443858,
+      "lightSeconds": 675.872,
+      "fetchedAt": "2026-11-10T10:37:27Z"
     },
     "mercury": {
-      "au": 0.72353587,
-      "lightSeconds": 361.048,
-      "fetchedAt": "2026-11-09T10:38:26Z"
+      "au": 0.74152156,
+      "lightSeconds": 370.023,
+      "fetchedAt": "2026-11-10T10:37:25Z"
     },
     "moon": {
-      "au": 0.00266186,
-      "lightSeconds": 1.328,
-      "fetchedAt": "2026-11-09T10:38:27Z"
+      "au": 0.00268007,
+      "lightSeconds": 1.337,
+      "fetchedAt": "2026-11-10T10:37:26Z"
     },
     "pluto": {
-      "au": 35.86075232,
-      "lightSeconds": 17894.695,
-      "fetchedAt": "2026-11-09T10:38:30Z"
+      "au": 35.87807837,
+      "lightSeconds": 17903.34,
+      "fetchedAt": "2026-11-10T10:37:30Z"
     },
     "titan": {
-      "au": 8.61724433,
-      "lightSeconds": 4300.048,
-      "fetchedAt": "2026-11-09T10:38:30Z"
+      "au": 8.62842888,
+      "lightSeconds": 4305.629,
+      "fetchedAt": "2026-11-10T10:37:29Z"
     },
     "venus": {
-      "au": 0.30543183,
-      "lightSeconds": 152.412,
-      "fetchedAt": "2026-11-09T10:38:26Z"
+      "au": 0.30952669,
+      "lightSeconds": 154.455,
+      "fetchedAt": "2026-11-10T10:37:26Z"
     }
   },
   "trappist1e": {
